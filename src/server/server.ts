@@ -7,9 +7,7 @@ import { ICoachOrder } from "../types/coach-order-type";
 
 // const URL = "http://localhost:3000/api/v1";
 // const URL = "https://back-b-kzfc.onrender.com//api/v1";
-const URL =
-  process.env.REACT_APP_API_URL || "https://back-b-kzfc.onrender.com/api/v1";
-console.log("API URL:", URL); // Dodaj tę linię do debugowania
+const URL = "https://back-b-kzfc.onrender.com/api/v1";
 
 //USERS
 
