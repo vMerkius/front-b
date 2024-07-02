@@ -1,0 +1,301 @@
+.coaching {
+  display: flex;
+  gap: 30px;
+  margin: 15px 140px;
+  position: relative;
+  @media (max-width: 1024px) {
+    margin: 15px 60px;
+  }
+  @media (max-width: 768px) {
+    margin: 15px 30px;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 15px auto;
+  }
+
+  & .custom-select {
+    & select {
+      background-color: var(--tg-common-color-black) !important;
+      color: #adb0bc !important;
+      & option {
+        color: #adb0bc;
+        & :hover {
+          background-color: #adb0bc !important;
+        }
+      }
+    }
+  }
+
+  & .filter {
+    max-width: 300px;
+    min-width: 250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    padding: 30px 0px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #262f39;
+
+    & .price {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+    }
+
+    & .check-box {
+      border: 1px solid #262f39;
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+      }
+      & span {
+        color: var(--tg-theme-primary);
+      }
+    }
+
+    & .clear-btn {
+      background-color: transparent;
+      border: none;
+      background-color: #adb0bc;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    & .filter-lanes {
+      display: flex;
+      gap: 3px;
+      & img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    & .input-title {
+      color: var(--tg-common-color-white);
+      font-size: 12px;
+    }
+
+    & .input-grp,
+    & .password-part .input-grp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      -webkit-clip-path: polygon(
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 0
+      );
+      clip-path: polygon(
+        100% 0,
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 0
+      );
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #262f39;
+        width: 60px;
+        height: 1px;
+        right: -21px;
+        bottom: 12px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      & input,
+      & select {
+        display: block;
+        width: 100%;
+        border: 1px solid #262f39;
+        background: transparent;
+        color: var(--tg-common-color-white);
+        padding: 15px 25px;
+      }
+      &--password {
+        position: relative;
+        & .show-hide {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: transparent;
+          border: none;
+          color: var(--tg-common-color-white);
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    & .input-wrapper {
+      width: 60%;
+      min-width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &
+    // .infinite-scroll-component__outerdiv
+    // .infinite-scroll-component
+    .card-container {
+    // padding: 5px 0px 0px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
+
+    & .coach-card {
+      background: #1c242f;
+      flex-grow: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 30px 10px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 3px 0px var(--tg-theme-primary);
+      position: relative;
+      transition: box-shadow 0.6s ease-in, transform 0.2s ease-in-out;
+
+      & .game {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      & .lanes {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 6px;
+      }
+      & .champions {
+        margin-bottom: 10px;
+        display: flex;
+        gap: 4px;
+      }
+
+      & .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & #name {
+          text-transform: none;
+          margin: 0;
+          font-size: 18px;
+          font-weight: 600;
+          color: var(--tg-common-color-white);
+        }
+        & .rating {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+
+          & .rating-number {
+            margin-left: 2px;
+            color: var(--tg-theme-primary);
+            font-weight: 600;
+          }
+        }
+      }
+
+      & .rank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 10px 0px var(--tg-theme-secondary);
+        // scale: 1.03;
+        transform: translateY(-10px);
+      }
+
+      & .order-btn {
+        background-color: var(--tg-theme-primary);
+        border: none;
+        color: var(--tg-common-color-black);
+        padding: 5px 30px;
+        font-weight: 600;
+        border-radius: 25px;
+        transition: background-color 0.4s ease-in-out,
+          box-shadow 0.4s ease-in-out;
+        width: 100%;
+        &:hover {
+          cursor: pointer;
+          background-color: var(--tg-theme-secondary);
+          box-shadow: 0px 0px 4px 0px var(--tg-theme-secondary);
+        }
+      }
+
+      & .top {
+        background-color: var(--tg-theme-primary);
+        position: absolute;
+        top: -8px;
+        right: 15px;
+        justify-self: right;
+        padding: 2px 8px;
+        border-radius: 12px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+
+        span {
+          color: var(--tg-common-color-green);
+          font-size: 14px;
+        }
+      }
+
+      & .img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid var(--tg-theme-primary);
+        margin-bottom: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

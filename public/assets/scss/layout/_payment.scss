@@ -1,0 +1,39 @@
+@use "../utils" as *;
+
+/*=============================
+     Payment Status Page
+===============================*/
+
+.payment {
+    &-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vh;
+            height: 40vh;
+            align-items: center;
+            justify-content: center;
+
+            & .title {  
+                text-align: center;
+                width: 100%;
+                font-size: 34px;
+                font-weight: 700;
+                color: var(--tg-common-color-white);
+            }
+
+            & .subtitle {
+                text-align: center;
+                width: 100%;
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--tg-theme-primary);
+            }
+        }
+    }
+}

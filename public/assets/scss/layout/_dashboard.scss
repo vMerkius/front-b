@@ -1,0 +1,257 @@
+@use "../utils" as *;
+
+.dashboard {
+  background-position: center;
+  background-size: cover;
+  background-color: var(--tg-common-color-black-2);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+
+  & .dashboard-appbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__order {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-right: 20px;
+
+      &__btn {
+        padding: 20px;
+        background-color: var(--tg-common-color-black-4);
+        border-style: solid;
+        border-color: var(--tg-common-color-purple);
+        border-width: 2px 2px 2px 2px;
+        border-radius: 50%;
+
+        &:hover {
+          scale: 1.2;
+          -webkit-box-shadow: -5px -12px 66px 1px var(--tg-common-color-purple);
+          -moz-box-shadow: -5px -12px 66px 1px var(--tg-common-color-purple);
+          box-shadow: -5px -12px 66px 1px var(--tg-common-color-purple);
+        }
+      }
+    }
+  }
+
+  & .dashboard-boosting {
+
+    &__boosting {
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+
+      & .roundCorners {
+        border-style: solid;
+        border-color: var(--tg-theme-primary);
+        border-width: 2px 2px 2px 2px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: var(--tg-common-color-black-4);
+      }
+
+      &__table {
+        width:100%;
+        background-color: var(--tg-common-color-black-4);
+      }
+    }
+  } 
+
+  & .dashboard-home {
+
+    &__latest {
+      display: block;
+      width: 100%;
+      margin-top: 40px;
+
+      & .roundCorners {
+        border-style: solid;
+        border-color: var(--tg-theme-primary);
+        border-width: 2px 2px 2px 2px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: var(--tg-common-color-black-4);
+      }
+
+      &__table {
+        width:100%;
+        background-color: var(--tg-common-color-black-4);
+      }
+    }
+  
+    &__boxes {
+      display: flex;
+      gap: 25px;
+      padding-top: 40px;
+    }
+
+    &__order {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column ;
+      align-items: center;
+      background-color: var(--tg-common-color-black-4);
+      border-style: solid;
+      border-color: var(--tg-theme-secondary);
+      border-width: 2px 2px 2px 2px;
+      border-radius: 20px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-left: 30px;
+
+      -webkit-box-shadow: -5px -12px 66px 1px var(--tg-theme-secondary);
+      -moz-box-shadow: -5px -12px 66px 1px var(--tg-theme-secondary);
+      box-shadow: -5px -12px 66px 1px var(--tg-theme-secondary);
+
+      &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--tg-theme-secondary);
+        text-transform: uppercase;
+      }
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--tg-common-color-black-4);
+      border-style: solid;
+      border-color: var(--tg-theme-primary);
+      border-width: 2px 2px 2px 2px;
+      border-radius: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 120px;
+      padding-right: 120px;
+
+      &__icon {
+        margin-bottom: 10px;
+      }
+
+      &:hover {
+        -webkit-box-shadow: -5px -12px 66px 1px var(--tg-theme-primary);
+        -moz-box-shadow: -5px -12px 66px 1px var(--tg-theme-primary);
+        box-shadow: -5px -12px 66px 1px var(--tg-theme-primary);
+      }
+    }
+  }
+
+  & .dashboard-bar {
+    display: flex;
+    height: 100%; 
+    align-items: center;
+    position: relative;
+    background-color: var(--tg-common-color-black-2);
+    border-style: solid;
+    border-color: var(--tg-theme-primary);
+    border-width: 0 3px 0 0;
+
+    & .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      transition: scale 0.6s ease;
+
+      &:hover {
+        cursor: pointer;
+        scale: 1.1; 
+      }
+    }
+
+    & .logout {
+      position: absolute;
+      bottom: 70px;
+      left: 50px;
+      transition: scale 0.6s ease;
+      padding: 20px;
+      background-color: var(--tg-common-color-black-4);
+      border-style: solid;
+      border-color: var(--tg-common-color-purple);
+      border-width: 2px 2px 2px 2px;
+      border-radius: 50%;
+
+      &:hover {
+        scale: 1.2;
+        -webkit-box-shadow: -5px -12px 66px 1px var(--tg-common-color-purple);
+        -moz-box-shadow: -5px -12px 66px 1px var(--tg-common-color-purple);
+        box-shadow: -5px -12px 66px 1px var(--tg-common-color-purple);
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 30px;
+      background-color: var(--tg-common-color-black-2);
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      padding: 70px 60px 70px 0px;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      background-color: var(--tg-common-color-black-6);
+      border-style: solid;
+      border-color: var(--tg-theme-primary);
+      border-width: 3px 3px 3px 0;
+    }
+
+    &__option {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 20px 22px;
+      background-color: transparent;
+      color: var(--tg-common-color-white);
+
+      transition: border-left 0.6s ease, color 0.6s ease, transform 0.6s ease,
+        scale 0.6s ease;
+      &:hover {
+        transform: translateX(15px);
+        cursor: pointer;
+        color: var(--tg-common-color-yellow);
+
+        scale: 1.1;
+      }
+      &--clicked {
+        transform: translateX(15px);
+        color: var(--tg-common-color-yellow);
+        scale: 1.1;
+      }
+
+      &__icon {
+        margin-right: 5px;
+      }
+
+      &__btn {
+        margin-right: 5px;
+      }
+    }
+  }
+}
