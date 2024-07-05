@@ -1,47 +1,40 @@
-import lolImage from "../assets/img/thumb/lol.jpg";
-import coachingImage from "../assets/img/thumb/coaching.png";
-import tftImage from "../assets/img/thumb/tft.png";
-import dotaImage from "../assets/img/thumb/dota.png";
-import valorantImage from "../assets/img/thumb/valorant.png";
-import cs2Image from "../assets/img/thumb/cs2.png";
-
-const cardData = [
+const card_data = [
   {
-    imageUrl: lolImage,
+    imageUrl: "/assets/img/thumb/lol.jpg",
     gameName: "League of legends",
     url: "/calculator/lol",
     done: true,
   },
   {
-    imageUrl: coachingImage,
+    imageUrl: "/assets/img/thumb/coaching.png",
     gameName: "Coaching",
     url: "/coaching",
     done: true,
   },
   {
-    imageUrl: tftImage,
+    imageUrl: "/assets/img/thumb/tft.png",
     gameName: "Teamfight Tactics",
     url: "/",
     done: false,
   },
   {
-    imageUrl: dotaImage,
+    imageUrl: "/assets/img/thumb/dota.png",
     gameName: "Dota 2",
     url: "/",
     done: false,
   },
   {
-    imageUrl: valorantImage,
+    imageUrl: "/assets/img/thumb/valorant.png",
     gameName: "Valorant",
     url: "/",
     done: false,
   },
   {
-    imageUrl: cs2Image,
+    imageUrl: "/assets/img/thumb/cs2.png",
     gameName: "CS2",
     url: "/",
     done: false,
   },
 ];
 
-export default cardData;
+export default card_data;
