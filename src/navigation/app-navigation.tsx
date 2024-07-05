@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutPage from "../pages/about";
 
 import TeamDetailsPage from "../pages/team-details";
-import ContactPage from "../pages/contact";
+// import ContactPage from "../pages/contact";
 import ScrollToTop from "../components/scroll-to-top";
 import CalculatorPage from "../pages/calculator";
 import LoginPage from "../pages/login";
@@ -24,7 +24,8 @@ export default function AppNavigation() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team-details" element={<TeamDetailsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        {/* <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/contact" element={<WorkInProgressPage />} />
         <Route path="/calculator/lol" element={<CalculatorPage />} />
         <Route path="/calculator/valorant" element={<WorkInProgressPage />} />
         <Route path="/calculator/tft" element={<WorkInProgressPage />} />

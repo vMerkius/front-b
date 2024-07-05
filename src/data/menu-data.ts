@@ -35,11 +35,11 @@ const menu_data: IMenuDataType[] = [
     title: "ABOUT US",
     link: "/about",
   },
-  {
-    id: 5,
-    title: "CONTACT",
-    link: "/contact",
-  },
+  // {
+  //   id: 5,
+  //   title: "CONTACT",
+  //   link: "/contact",
+  // },
 ];
 
 export default menu_data;
