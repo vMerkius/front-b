@@ -3,7 +3,7 @@ import TextAnimation from "../common/text-animation";
 import { NavLink } from "react-router-dom";
 import { getRecommendedAPI } from "../../server/server";
 import { ICoach } from "../../types/coach-type";
-import logoTmp from "../../../public/assets/img/team/team01.png";
+import logoTmp from "/assets/img/team/team01.png";
 
 const TeamArea = () => {
   const [team, setTeam] = useState<ICoach[]>([]);
