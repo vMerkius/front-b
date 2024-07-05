@@ -6,7 +6,6 @@ import "bootstrap/scss/bootstrap.scss";
 import "swiper/css/bundle";
 import "react-toastify/dist/ReactToastify.css";
 import "react-modal-video/scss/modal-video.scss";
-// import "~slick-carousel/slick/slick.css";
 import "./index.scss";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
