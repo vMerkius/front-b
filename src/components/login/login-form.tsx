@@ -58,7 +58,6 @@ const LoginForm: React.FC<LoginFormProps> = ({
         console.log(error);
       }
     },
-
     onError: (error) => console.log("Login Failed:", error),
     scope: "openid profile email",
   });
