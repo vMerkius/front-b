@@ -101,17 +101,17 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
                   <div className="tgmenu__action d-none d-md-block">
                     <ul className="list-wrap">
                       <li className="header-btn">
-                      <NavLink
-                            to="https://www.trustpilot.com/review/front-b.onrender.com"
-                            className="tg-btn-3 tg-svg"
-                            target="_blank"
-                          >
-                            <SvgIconCom
-                                icon={"/assets/img/icons/shape02.svg"}
-                                id="svg-2"
-                              />                    
-                            <img src="/assets/img/new-icons/stars.svg" />
-                          </NavLink>
+                        <NavLink
+                          to="https://www.trustpilot.com/review/front-b.onrender.com"
+                          className="tg-btn-3 tg-svg"
+                          target="_blank"
+                        >
+                          <SvgIconCom
+                            icon={"/assets/img/icons/shape02.svg"}
+                            id="svg-2"
+                          />
+                          <img src="/assets/img/new-icons/stars.svg" />
+                        </NavLink>
                       </li>
                       <li className="header-btn">
                         {user ? (
@@ -120,8 +120,12 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
                               onMouseEnter={handleMouseEnter}
                               onMouseLeave={handleMouseLeave}
                               onClick={handleClick}
-                              className="login"
+                              className={`${"tg-btn-3 tg-svg"}`}
                             >
+                              <SvgIconCom
+                                icon={"/assets/img/icons/shape02.svg"}
+                                id="svg-2"
+                              />
                               <img src={usericon} alt="user" width="20px" />
 
                               <span>{user.name}</span>

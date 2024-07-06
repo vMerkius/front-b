@@ -312,28 +312,6 @@
         }
       }
 
-      & .login {
-        color: var(--tg-common-color-black-2);
-        font-size: 14px;
-        padding: 7px 20px;
-        font-weight: var(--tg-fw-extra-bold);
-        border-radius: 25px;
-        background-color: transparent;
-        border: none;
-        color: var(--tg-theme-primary);
-        background-color: #131b22;
-        // box-shadow: 0px 0px 7px 0px var(--tg-theme-primary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        transition: color 0.6s ease, box-shadow 0.6s ease;
-
-        &:hover {
-          box-shadow: 0px 0px 7px 0px var(--tg-theme-secondary);
-          // color: var(--tg-theme-secondary);
-        }
-      }
       & .btn {
         color: var(--tg-common-color-black-2);
         font-size: 14px;
