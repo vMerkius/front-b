@@ -59,6 +59,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
       }
     },
     scope: "email profile openid",
+    redirect_uri: "https://front-b.onrender.com/login",
   });
 
   const handleNewAccount = () => {
