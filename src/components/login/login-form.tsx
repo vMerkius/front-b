@@ -44,6 +44,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
   const loginWithGoogleAPI = useGoogleLogin({
     onSuccess: async (response) => {
       try {
+        console.log("response", response);
         const res = await axios.get(
           "https://www.googleapis.com/oauth2/v3/userinfo",
           {
@@ -109,6 +110,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
         className="google-btn"
         onClick={() => {
           setGoogleLogin(true);
+          console.log("loginWithGoogleAPI", loginWithGoogleAPI);
           loginWithGoogleAPI();
         }}
       >
