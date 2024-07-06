@@ -4,6 +4,8 @@ import { ILogin } from "../types/login-type";
 import { IOrder } from "../types/order-type";
 import { ICoachCreate } from "../types/coach-type";
 import { ICoachOrder } from "../types/coach-order-type";
+import { IUserNewPassword } from "../types/user-new-password";
+import { IUserForgotPassword } from "../types/user-forgot-password";
 
 // const URL = "http://localhost:3000/api/v1";
 // const URL = "https://back-b-kzfc.onrender.com//api/v1";
@@ -23,6 +25,30 @@ export const signUpAPI = async (user: IUserSignUp) => {
 export const loginAPI = async (user: ILogin) => {
   try {
     const response = await axios.post(`${URL}/users/login`, user, {
+      withCredentials: true,
+    });
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const newPasswordAPI = async (user: IUserNewPassword, resetToken: string) => {
+  console.log(user);
+  console.log(resetToken);
+  try {
+    const response = await axios.patch(`${URL}/users/resetPassword/${resetToken}`, user, {
+      withCredentials: true,
+    });
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const forgotPasswordAPI = async (user: IUserForgotPassword) => {
+  try {
+    const response = await axios.post(`${URL}/users/forgotPassword`, user, {
       withCredentials: true,
     });
     return response.data;

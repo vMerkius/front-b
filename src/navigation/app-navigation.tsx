@@ -15,6 +15,7 @@ import WorkInProgressPage from "../pages/wip";
 import Home from "../pages/home";
 import PaymentPage from "../pages/payment";
 import AccVerifiedPage from "../pages/verified";
+import NewPasswordPage from "../pages/new-password";
 
 export default function AppNavigation() {
   return (
@@ -46,6 +47,7 @@ export default function AppNavigation() {
         <Route path="faq" element={<Faq />} />
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/verified" element={<AccVerifiedPage />} />
+        <Route path="/new-password/:resetToken" element={<NewPasswordPage />} />
       </Routes>
     </BrowserRouter>
   );
