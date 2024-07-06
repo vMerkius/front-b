@@ -41,7 +41,6 @@
     min-width: 400px;
     max-width: 400px;
     margin-bottom: 30px;
-    filter: grayscale(100%);
     border: 2px solid transparent;
     transition: filter 2s ease, transform 2.5s ease;
     border-radius: 10px;
@@ -52,7 +51,7 @@
       top: 20px;
       right: -15px;
       background-color: var(--tg-common-color-teal);
-      filter: none;
+      filter: none !important;
       color: white;
       font-weight: bold;
       text-align: center;
@@ -66,7 +65,6 @@
     }
 
     &:hover {
-      filter: none;
       scale: 1.05;
       cursor: pointer;
     }

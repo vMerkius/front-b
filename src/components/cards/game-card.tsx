@@ -11,7 +11,10 @@ const GameCard: React.FC<GameCardProps> = ({ cardData, index }) => {
   const navigate = useNavigate();
   const boxClass = `game-card__box ${
     index % 3 === 1 ? "game-card__box__middle" : ""
-  } ${!cardData.done ? "game-card__coming-soon" : ""}`;
+  } 
+  ${!cardData.done ? "game-card__coming-soon" : ""}
+  ${cardData.done ? "game-card__box__done" : ""}
+  `;
   const nameClass =
     index % 3 === 1
       ? "game-card__box__name game-card__box__name__middle"
