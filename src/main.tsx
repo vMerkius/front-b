@@ -8,10 +8,10 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-modal-video/scss/modal-video.scss";
 import "./index.scss";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-
+// clientId="866051324371-gep0bi3kmtvn8tfgi3civlt2j37q1kut.apps.googleusercontent.com">
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId="866051324371-gep0bi3kmtvn8tfgi3civlt2j37q1kut.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="306475290852-lirj6ec3fcptphm42uj6c98d64v28sn6.apps.googleusercontent.com">
       <App />
     </GoogleOAuthProvider>
   </React.StrictMode>

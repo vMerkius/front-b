@@ -56,6 +56,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
         console.log(error);
       }
     },
+    scope: "email profile openid",
   });
 
   const handleNewAccount = () => {
