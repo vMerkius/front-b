@@ -58,6 +58,8 @@ const LoginForm: React.FC<LoginFormProps> = ({
         console.log(error);
       }
     },
+
+    onError: (error) => console.log("Login Failed:", error),
     scope:
       "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
   });
@@ -111,7 +113,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
         className="google-btn"
         onClick={() => {
           setGoogleLogin(true);
-          console.log("loginWithGoogleAPI", loginWithGoogleAPI);
+          console.log("loginWithGoogleAPI");
           loginWithGoogleAPI();
         }}
       >
