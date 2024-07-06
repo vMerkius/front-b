@@ -60,8 +60,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
     },
 
     onError: (error) => console.log("Login Failed:", error),
-    scope:
-      "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+    scope: "openid profile email",
   });
 
   const handleNewAccount = () => {
