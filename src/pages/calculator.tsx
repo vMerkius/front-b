@@ -14,8 +14,8 @@ export default function CalculatorPage() {
 
       <main className="main--area">
         <BreadcrumbAreaThree
-          title="Rank Calculator"
-          subtitle="Rank Calculator"
+          title="Price Calculator"
+          subtitle="Price Calculator"
         />
 
         <CalcWrapper />

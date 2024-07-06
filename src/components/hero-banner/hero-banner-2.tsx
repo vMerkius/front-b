@@ -22,9 +22,9 @@ const HeroBannerTwo = () => {
                 className="banner__btn wow bounceInLeft"
                 data-wow-delay=".6s"
               >
-                <NavLink to="/contact" className="tg-btn-3 tg-svg mx-auto">
+                <NavLink to="/calculator/lol" className="tg-btn-3 tg-svg mx-auto">
                   <SvgIconCom icon={"/assets/img/icons/shape.svg"} id="svg-1" />
-                  <span>Let's Start</span>
+                  <span>Get Started</span>
                 </NavLink>
               </div>
             </div>

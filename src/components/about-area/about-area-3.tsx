@@ -14,7 +14,7 @@ const AboutAreaThree = () => {
                 <i>
                   ern <b>den</b>
                 </i>
-                <i>service</i>
+                <i>team</i>
               </h2>
               <div className="about__content-circle">
                 <img src="/assets/img/icons/rocket.png" alt="img" />
