@@ -30,6 +30,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
 
   const handleGoogleLogin = async (userInfo: any) => {
     try {
+      console.log(userInfo);
       const response = await loginGoogleAPI(userInfo);
       if (response.status === "success") {
         notifySuccess("Logged successfully!");
