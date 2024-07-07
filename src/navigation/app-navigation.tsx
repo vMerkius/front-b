@@ -16,6 +16,7 @@ import Home from "../pages/home";
 import PaymentPage from "../pages/payment";
 import AccVerifiedPage from "../pages/verified";
 import NewPasswordPage from "../pages/new-password";
+import CalculatorTftPage from "../pages/calculator-tft";
 
 export default function AppNavigation() {
   return (
@@ -29,7 +30,7 @@ export default function AppNavigation() {
         <Route path="/contact" element={<WorkInProgressPage />} />
         <Route path="/calculator/lol" element={<CalculatorPage />} />
         <Route path="/calculator/valorant" element={<WorkInProgressPage />} />
-        <Route path="/calculator/tft" element={<WorkInProgressPage />} />
+        <Route path="/calculator/tft" element={<CalculatorTftPage />} />
 
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard/:id" element={<WorkInProgressPage />} />

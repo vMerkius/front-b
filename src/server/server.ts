@@ -6,6 +6,7 @@ import { ICoachCreate } from "../types/coach-type";
 import { ICoachOrder } from "../types/coach-order-type";
 import { IUserNewPassword } from "../types/user-new-password";
 import { IUserForgotPassword } from "../types/user-forgot-password";
+import { IOrderTft } from "../types/order-tft-type";
 
 // const URL = "http://localhost:3000/api/v1";
 // const URL = "https://back-b-kzfc.onrender.com//api/v1";
@@ -33,13 +34,20 @@ export const loginAPI = async (user: ILogin) => {
   }
 };
 
-export const newPasswordAPI = async (user: IUserNewPassword, resetToken: string) => {
+export const newPasswordAPI = async (
+  user: IUserNewPassword,
+  resetToken: string
+) => {
   console.log(user);
   console.log(resetToken);
   try {
-    const response = await axios.patch(`${URL}/users/resetPassword/${resetToken}`, user, {
-      withCredentials: true,
-    });
+    const response = await axios.patch(
+      `${URL}/users/resetPassword/${resetToken}`,
+      user,
+      {
+        withCredentials: true,
+      }
+    );
     return response.data;
   } catch (error) {
     console.log(error);
@@ -105,6 +113,14 @@ export const logoutUser = async () => {
 export const calculateAPI = async (order: IOrder) => {
   try {
     const response = await axios.post(`${URL}/orders/price`, order);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+export const calculateTftAPI = async (order: IOrderTft) => {
+  try {
+    const response = await axios.post(`${URL}/orders/priceTft`, order);
     return response.data;
   } catch (error) {
     console.log(error);
