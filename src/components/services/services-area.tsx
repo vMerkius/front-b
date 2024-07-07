@@ -92,7 +92,7 @@ const ServicesArea = () => {
                   }`}
                 >
                   <img src={s} alt="img" />
-                  <NavLink to="/service-details" className="services__link">
+                  <NavLink to="/calculator/lol" className="services__link">
                     <i className="flaticon-next"></i>
                   </NavLink>
                 </div>
