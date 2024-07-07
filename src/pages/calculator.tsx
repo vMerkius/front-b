@@ -13,10 +13,7 @@ export default function CalculatorPage() {
       <Header />
 
       <main className="main--area">
-        <BreadcrumbAreaThree
-          title="Price Calculator"
-          subtitle="Price Calculator"
-        />
+        <BreadcrumbAreaThree title="Lol Calculator" subtitle="Lol Calculator" />
 
         <CalcWrapper />
       </main>

@@ -13,10 +13,7 @@ export default function CalculatorTftPage() {
       <Header />
 
       <main className="main--area">
-        <BreadcrumbAreaThree
-          title="Rank Calculator"
-          subtitle="Rank Calculator"
-        />
+        <BreadcrumbAreaThree title="Tft Calculator" subtitle="Tft Calculator" />
 
         <CalcTftWrapper />
       </main>
