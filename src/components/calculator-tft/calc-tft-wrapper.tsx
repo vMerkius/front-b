@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import Result from "../calculator/result";
 import { IUserRank } from "../../types/user-rank";
 import rank_data from "../../data/rank-data";
-import RankSelection from "../calculator/rank-selection";
 import { IBoostTftOptions } from "../../types/boost-option-tft";
 import ResultTft from "./result-tft";
 import RankSelectionTft from "./rank-selection-tft";
