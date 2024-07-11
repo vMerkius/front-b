@@ -8,10 +8,15 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-modal-video/scss/modal-video.scss";
 import "./index.scss";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-// clientId="866051324371-gep0bi3kmtvn8tfgi3civlt2j37q1kut.apps.googleusercontent.com">
+const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+
+if (!clientId) {
+  throw new Error("REACT_APP_GOOGLE_CLIENT_ID is not defined");
+}
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId="306475290852-pu7mlaplgf5gubucs223kpjjp3ddvegs.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={clientId}>
       <App />
     </GoogleOAuthProvider>
   </React.StrictMode>

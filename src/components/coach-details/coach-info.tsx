@@ -121,7 +121,6 @@ const CoachInfo: React.FC<CoachInfoProps> = ({ coach }) => (
                           }
                         });
                       })}
-                      {/* <h5 className="title">04</h 5> */}
                     </div>
                   </div>
                 </li>

@@ -115,6 +115,16 @@ const RankSelection: React.FC<RankSelectionProps> = ({
                     </select>
                   </>
                 )}
+                {rank.rank === "Master" && !desired && (
+                  <>
+                    <span className="input-title">Current LP</span>
+
+                    <input
+                      placeholder="LP's (max 500)"
+                      onChange={onChangeLps}
+                    />
+                  </>
+                )}
                 {rank.rank === "Master" && desired && (
                   <>
                     <span className="input-title">Desired LP</span>

@@ -126,10 +126,22 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
                                 icon={"/assets/img/icons/shape02.svg"}
                                 id="svg-2"
                               />
-                              <img src={usericon} alt="user" width="20px" />
+                              <div
+                                className="d-flex"
+                                style={{ height: "100%" }}
+                              >
+                                <img src={usericon} alt="user" width="20px" />
 
-                              <span>{user.name}</span>
-                              <img src={arrowDown} alt="arrow" width="12px" />
+                                <div className="d-flex gap-2">
+                                  <span>{user.name}</span>
+
+                                  <img
+                                    src={arrowDown}
+                                    alt="arrow"
+                                    width="12px"
+                                  />
+                                </div>
+                              </div>
                             </button>
                             {showDetails && (
                               <Details nick={user.name} id={user._id} />

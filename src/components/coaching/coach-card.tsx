@@ -11,7 +11,6 @@ type CoachCardProps = {
 };
 
 const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
-  console.log("coach", coach);
   const navigate = useNavigate();
   return (
     <div className="coach-card">
@@ -29,6 +28,7 @@ const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
           <span className="rating-number">{coach.rating}</span>
         </span>
       </div>
+
       <div className="rank">
         {rank_data.map((rank) => {
           if (rank.name === coach.rank) {
@@ -48,6 +48,9 @@ const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
           }
         })}
       </div>
+      <span className="price">
+        <span className="price__color">{coach.price}$</span>/hour
+      </span>
 
       <div className="lanes">
         {lanes_data.map((lane) => {
@@ -65,6 +68,7 @@ const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
           });
         })}
       </div>
+
       <div className="champions">
         {coach.champions.map((champion, i) => {
           return <span key={i}>{champion} </span>;
@@ -72,6 +76,7 @@ const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
       </div>
 
       <span>{coach.recommended}</span>
+
       <button
         onClick={() => navigate(`/coaching/${coach._id}`)}
         className="order-btn"

@@ -38,6 +38,7 @@ const CoachDetailsWrapper = () => {
           subtitle="COACH DETAILS"
           bg="/assets/img/bg/breadcrumb_bg01.jpg"
           brd_img={coach.imageUrl !== null ? coach.imageUrl : ""}
+          isCoach={true}
         />
         <CoachInfo coach={coach} />
         <CoachOrder coach={coach} />

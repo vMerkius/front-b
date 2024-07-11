@@ -80,7 +80,9 @@
       display: flex;
       gap: 3px;
       & img {
+        transition: scale 0.2s ease-in-out;
         &:hover {
+          scale: 1.1;
           cursor: pointer;
         }
       }
@@ -191,6 +193,13 @@
         position: absolute;
         top: 10px;
         left: 10px;
+      }
+      & .price {
+        margin-bottom: 5px;
+        &__color {
+          color: var(--tg-theme-primary);
+          font-weight: 600;
+        }
       }
 
       & .lanes {
