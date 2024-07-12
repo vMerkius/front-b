@@ -102,7 +102,11 @@ const RankSelection: React.FC<RankSelectionProps> = ({
               <div className="d-flex flex-column justify-content-center align-items-center">
                 {rank.rank !== "Master" && (
                   <>
-                    <span className="input-title">Current LP</span>
+                    {!desired ? (
+                      <span className="input-title">Current LP</span>
+                    ) : (
+                      <span className="input-title">Desired LP</span>
+                    )}
 
                     <select
                       className="custom-select"
@@ -115,6 +119,7 @@ const RankSelection: React.FC<RankSelectionProps> = ({
                     </select>
                   </>
                 )}
+
                 {rank.rank === "Master" && !desired && (
                   <>
                     <span className="input-title">Current LP</span>

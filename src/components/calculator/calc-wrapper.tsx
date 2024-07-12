@@ -13,7 +13,7 @@ import FaqBox from "../faq/faq-box";
 const CalcWrapper = () => {
   const [boostType, setBoostType] = useState<number>(1);
   const [boostOptions, setBoostOptions] = useState<IBoostOptions>({
-    mmrs: "",
+    mmrs: "15-19 LP",
     solo: true,
     lane: {
       primary: "",

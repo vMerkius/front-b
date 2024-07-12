@@ -111,6 +111,7 @@ export const logoutUser = async () => {
 // CALCULATE
 
 export const calculateAPI = async (order: IOrder) => {
+  console.log(order);
   try {
     const response = await axios.post(`${URL}/orders/price`, order);
     return response.data;
