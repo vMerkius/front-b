@@ -3,39 +3,51 @@ import { IFaq } from "../types/faq-type";
 const faq_data: IFaq[] = [
   {
     id: 1,
-    question: "What is the difference between coaching and boosting?",
+    question: "How Does Rank Boosting Work?",
     answer:
-      "Coaching is a service where aoosting is a service where a professional pln your account to increase your rank.",
+      "Our rank boosting process is simple. You purchase the desired boost from our website, and we assign a top-tier booster to your account. They will play on your account until it reaches the rank you purchased.",
   },
   {
     id: 2,
-    question: "What if I am not satisfied with the service?",
+    question: "How Long Will the Boost Take?",
     answer:
-      "If you are not satisfied with the service, please contact us and we will do our best to resolve the issue.",
+      "The duration of the boost depends on your current rank and the target rank. However, our boosters are very efficient and typically complete boosts within a day.",
   },
-
   {
     id: 3,
-    question: "Can I play with the booster?",
+    question: "Is Boosting Safe?",
     answer:
-      "Yes, you can play with the booster. Please contact us for more information.",
+      "Absolutely. We have maintained a perfect record with zero bans. We prioritize security and confidentiality, ensuring your account remains safe. Our strict anti-cheat policy further guarantees your account's safety.",
   },
   {
     id: 4,
-    question: "Can I choose the booster?",
+    question: "Can I Duo Queue with the Booster?",
     answer:
-      "Yes, you can choose the booster. Please contact us for more information.",
+      "Yes, you can opt for our duo boosting service. This allows you to play alongside the booster until you reach your desired rank, giving you a chance to improve and learn new strategies.",
   },
   {
     id: 5,
-    question: "Can I get a refund?",
+    question: "What is Elo Boosting?",
     answer:
-      "Yes, you can get a refund. Please contact us for more information.",
+      "Elo boosting involves a highly skilled player playing on your account to elevate your rank. This helps you reach higher tiers more quickly and effectively.",
   },
   {
     id: 6,
-    question: "How do I contact support?",
-    answer: "You can contact support by emailing us at",
+    question: "Why Should You Choose Our Service?",
+    answer:
+      "We are leaders in the LoL boosting industry, offering a variety of packages to suit your needs. Our boosters are among the fastest, ensuring quick rank improvements. Additionally, our 24/7 customer service is always available to assist you.",
+  },
+  {
+    id: 7,
+    question: "What is the Cost of Elo Boosting?",
+    answer:
+      "The cost varies based on your starting rank and the desired rank. Higher tier boosts, like from Bronze to Challenger, are more expensive than boosts between closer ranks like Silver to Gold. LP gains also influence the price.",
+  },
+  {
+    id: 8,
+    question: "What Are the Advantages of Boosting?",
+    answer:
+      "Boosting offers several benefits, including faster rank progression and improved Matchmaking Rating (MMR). It also provides an opportunity to learn from top players and implement advanced strategies.",
   },
 ];
 

@@ -3,6 +3,7 @@ import rank_data from "../../data/rank-data";
 import lanes_data from "../../data/lanes-data";
 import game_data from "../../data/game-data";
 import star from "../../../public/assets/img/new-icons/star.svg";
+import lanes from "../../../public/assets/img/lanes/lanes.png";
 
 type CoachInfoProps = {
   coach: ICoach;
@@ -103,7 +104,7 @@ const CoachInfo: React.FC<CoachInfoProps> = ({ coach }) => (
                 <li>
                   <div className="coaching-details__info-item">
                     <div className="coaching-details__info-icon">
-                      <i className="flaticon-diamond"></i>
+                      <img src={lanes} alt="lanes" width="40px" />
                     </div>
                     <div className="coaching-details__info-content">
                       <span className="sub">Lanes</span>
