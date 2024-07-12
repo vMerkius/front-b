@@ -3,16 +3,9 @@ import logo from "../../../public/assets/img/logo/logo.png";
 const Loading = () => {
   return (
     <div className="loading">
-      <div>
+      <div className="loading__container">
         <img src={logo} alt="logo" />
-        <h6
-          style={{
-            color: "#fff",
-            marginTop: "5px",
-          }}
-        >
-          Loading...
-        </h6>
+        <h6>Loading...</h6>
       </div>
     </div>
   );

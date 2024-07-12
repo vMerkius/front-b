@@ -26,6 +26,9 @@ const Ranks: React.FC<RanksProps> = ({ rank, setRank, userRank }) => {
   const handleClickRank = (name: string, id: number) => {
     if (id < userRankId) return;
     setRank({ ...rank, rank: name });
+    if (name === "Master") {
+      setRank({ ...rank, rank: name, division: "I", lp: "0" });
+    }
   };
   const handleClickDivison = (name: string, id: number) => {
     if (desiredId === userRankId && userRankDivId >= id) return;

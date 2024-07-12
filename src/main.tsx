@@ -8,8 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 import "react-modal-video/scss/modal-video.scss";
 import "./index.scss";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
-console.log("clientId", clientId);
+// const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+// console.log("clientId", clientId);
 
 // if (!clientId) {
 //   throw new Error("REACT_APP_GOOGLE_CLIENT_ID is not defined");
