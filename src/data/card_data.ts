@@ -14,8 +14,8 @@ const card_data = [
   {
     imageUrl: "/assets/img/thumb/tft.png",
     gameName: "Teamfight Tactics",
-    url: "/",
-    done: false,
+    url: "/calculator/tft",
+    done: true,
   },
   {
     imageUrl: "/assets/img/thumb/dota.png",

@@ -29,7 +29,6 @@ const GameCard: React.FC<GameCardProps> = ({ cardData, index }) => {
           onClick={() => navigate(`${cardData.url}`)}
         />
         <h3 className={nameClass}>
-          {/* <NavLink to={`/calculator/${cardData.gameName}`}>{cardData.gameName}</NavLink> */}
           <NavLink to={`${cardData.url}`}>{cardData.gameName}</NavLink>
         </h3>
       </div>

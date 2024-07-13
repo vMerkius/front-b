@@ -23,7 +23,7 @@ const faq_data: IFaq[] = [
     id: 4,
     question: "Can I Duo Queue with the Booster?",
     answer:
-      "Yes, you can opt for our duo boosting service. This allows you to play alongside the booster until you reach your desired rank, giving you a chance to improve and learn new strategies.",
+      "Yes, you can. This allows you to play alongside the booster until you reach your desired rank, giving you a chance to improve and learn new strategies.",
   },
   {
     id: 5,

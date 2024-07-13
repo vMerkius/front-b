@@ -1,0 +1,43 @@
+.safety-section {
+  margin: 0px auto;
+  padding: 60px 0px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  & .desc {
+    max-width: 500px;
+    & h2 {
+      font-size: 40px;
+    }
+    & p {
+      font-size: 16px;
+    }
+  }
+  & .items {
+    display: flex;
+    gap: 40px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    & .safety-box {
+      border-radius: 20px;
+      background-color: var(--tg-common-color-black-9);
+      box-shadow: 0 0 4px 0 var(--tg-common-color-black-9);
+      max-width: 400px;
+      padding: 30px 50px;
+      &__upper {
+        &__header {
+          font-size: 22px;
+        }
+      }
+      &__lower {
+        & p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

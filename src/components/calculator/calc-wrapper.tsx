@@ -9,7 +9,6 @@ import NetWins from "./net-wins";
 import Placements from "./placements";
 import SliderPlacements from "./slider";
 import FaqBox from "../faq/faq-box";
-import Faq from "../faq/faq";
 
 const CalcWrapper = () => {
   const [boostType, setBoostType] = useState<number>(1);
@@ -154,7 +153,6 @@ const CalcWrapper = () => {
           )}
         </div>
       </div>
-      <Faq secondOption={true} />
     </section>
   );
 };
