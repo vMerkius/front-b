@@ -7,10 +7,20 @@
   justify-content: center;
   align-items: center;
   height: 600px;
+  position: relative;
+  flex-direction: column;
+  gap: 40px;
+
   & .desc {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
     & h2 {
       font-size: 40px;
+      color: var(--tg-theme-primary);
+      font-weight: 800;
     }
     & p {
       font-size: 16px;
@@ -23,12 +33,29 @@
       flex-direction: column;
     }
     & .safety-box {
-      border-radius: 20px;
+      border-radius: 15px;
       background-color: var(--tg-common-color-black-9);
       box-shadow: 0 0 4px 0 var(--tg-common-color-black-9);
       max-width: 400px;
-      padding: 30px 50px;
+      padding: 10px 40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 4px 0 var(--tg-theme-primary);
+      }
       &__upper {
+        &__vpn,
+        &__protection,
+        &__verified {
+          position: absolute;
+          top: -20px;
+          left: -20px;
+        }
         &__header {
           font-size: 22px;
         }
