@@ -27,7 +27,7 @@
   box-shadow: 0 0 7px 0 var(--tg-common-color-black-7);
   background-color: var(--tg-common-color-black-9);
   width: 100%;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 20px;
   h2 {
     font-size: 20px;
@@ -53,7 +53,7 @@
       text-overflow: ellipsis;
     }
     &__open {
-      max-height: 50px;
+      max-height: none;
     }
   }
 }
