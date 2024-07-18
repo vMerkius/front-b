@@ -17,7 +17,6 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
   const { sticky, isStickyVisible } = useSticky();
   const [openMobileOffCanvas, setOpenMobileOffCanvas] =
     useState<boolean>(false);
-  const [isOffCanvasOpen, setIsOffCanvasOpen] = useState<boolean>(false);
 
   const location = useLocation();
 
@@ -37,11 +36,7 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
     setPersistDetails(!persistDetails);
     setShowDetails(!persistDetails);
   };
-  const handleOpenOffCanvas = (audioPath: string) => {
-    setIsOffCanvasOpen(true);
-    const audio = new Audio(audioPath);
-    audio.play();
-  };
+
   const handleOpenMobileOffCanvas = () => {
     setOpenMobileOffCanvas(true);
   };
