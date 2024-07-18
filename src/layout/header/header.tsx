@@ -7,14 +7,18 @@ import usericon from "../../../public/assets/img/new-icons/user-common.svg";
 import arrowDown from "../../../public/assets/img/new-icons/arrow-down.svg";
 import Details from "./details";
 import { useAuth } from "../../context/auth-context";
+import MobileOffCanvas from "../../components/common/mobile-offcanvas";
 
 const Header = ({ style_2 = false }: { style_2?: boolean }) => {
   const { user } = useAuth();
 
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const [persistDetails, setPersistDetails] = useState(false);
-
   const { sticky, isStickyVisible } = useSticky();
+  const [openMobileOffCanvas, setOpenMobileOffCanvas] =
+    useState<boolean>(false);
+  const [isOffCanvasOpen, setIsOffCanvasOpen] = useState<boolean>(false);
+
   const location = useLocation();
 
   useState<boolean>(false);
@@ -33,6 +37,14 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
     setPersistDetails(!persistDetails);
     setShowDetails(!persistDetails);
   };
+  const handleOpenOffCanvas = (audioPath: string) => {
+    setIsOffCanvasOpen(true);
+    const audio = new Audio(audioPath);
+    audio.play();
+  };
+  const handleOpenMobileOffCanvas = () => {
+    setOpenMobileOffCanvas(true);
+  };
   return (
     <header>
       <div
@@ -44,7 +56,10 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
         <div className="container custom-container">
           <div className="row">
             <div className="col-12">
-              <div className="mobile-nav-toggler">
+              <div
+                className="mobile-nav-toggler"
+                onClick={() => handleOpenMobileOffCanvas()}
+              >
                 <i className="fas fa-bars"></i>
               </div>
               <div className="tgmenu__wrap">
@@ -172,6 +187,10 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
           </div>
         </div>
       </div>
+      <MobileOffCanvas
+        openMobileOffCanvas={openMobileOffCanvas}
+        setOpenMobileOffCanvas={setOpenMobileOffCanvas}
+      />
     </header>
   );
 };

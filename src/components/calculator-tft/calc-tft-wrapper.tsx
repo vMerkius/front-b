@@ -47,7 +47,7 @@ const CalcTftWrapper = () => {
       className="calculator-area"
       style={{
         backgroundImage: "url(/assets/img/bg/match_bg.jpg",
-        marginTop: "50px",
+        paddingTop: "50px",
       }}
     >
       <div className="container">

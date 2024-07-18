@@ -1,7 +1,6 @@
 import React from "react";
 import ModalVideo from "react-modal-video";
 
-// prop type
 type IPropType = {
   isVideoOpen: boolean;
   setIsVideoOpen: React.Dispatch<React.SetStateAction<boolean>>;

@@ -36,13 +36,11 @@ const VideoArea = () => {
         </div>
       </section>
 
-      {/* video modal start */}
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         videoId={"ssrNcwxALS4"}
       />
-      {/* video modal end */}
     </>
   );
 };
