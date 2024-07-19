@@ -20,9 +20,9 @@ const ResultDivision: React.FC<ResultDivisionProps> = ({
           {rank.rank} {rank.rank !== "Master" ? rank.division : ""}
         </span>
         {rank.rank !== "Master" && <span>{rank.lp}</span>}
-        {rank.rank === "Master" && desired && !values.includes(rank.lp) && (
-          <span>{rank.lp}</span>
-        )}
+        {rank.rank === "Master" &&
+          !values.includes(rank.lp) &&
+          parseInt(rank.lp) > 0 && <span>{rank.lp}</span>}
       </span>
     </div>
   );

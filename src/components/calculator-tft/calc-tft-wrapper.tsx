@@ -7,7 +7,7 @@ import RankSelectionTft from "./rank-selection-tft";
 
 const CalcTftWrapper = () => {
   const [boostOptions, setBoostOptions] = useState<IBoostTftOptions>({
-    mmrs: "",
+    mmrs: "15-19 LP",
     additionalWin: false,
     streamed: false,
     chat: false,

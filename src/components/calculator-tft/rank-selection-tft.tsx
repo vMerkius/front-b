@@ -100,7 +100,11 @@ const RankSelectionTft: React.FC<RankSelectionProps> = ({
               <div className="d-flex flex-column justify-content-center align-items-center">
                 {rank.rank !== "Master" && (
                   <>
-                    <span className="input-title">Current LP</span>
+                    {!desired ? (
+                      <span className="input-title">Current LP</span>
+                    ) : (
+                      <span className="input-title">Desired LP</span>
+                    )}
 
                     <select
                       className="custom-select"
@@ -111,6 +115,16 @@ const RankSelectionTft: React.FC<RankSelectionProps> = ({
                         <option key={lp.id}>{lp.value}</option>
                       ))}
                     </select>
+                  </>
+                )}
+                {rank.rank === "Master" && !desired && (
+                  <>
+                    <span className="input-title">Current LP</span>
+
+                    <input
+                      placeholder="LP's (max 500)"
+                      onChange={onChangeLps}
+                    />
                   </>
                 )}
                 {rank.rank === "Master" && desired && (
