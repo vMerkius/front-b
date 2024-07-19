@@ -8,10 +8,7 @@ type ResultDivisionProps = {
 
 const values = ["0-20LP", "20-40LP", "40-60LP", "60-80LP", "80-100LP"];
 
-const ResultDivision: React.FC<ResultDivisionProps> = ({
-  rank,
-  desired = false,
-}) => {
+const ResultDivision: React.FC<ResultDivisionProps> = ({ rank }) => {
   return (
     <div className="rank-section" style={{ margin: 0 }}>
       <RankImg rank={rank} width="80px" />
