@@ -360,7 +360,7 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+5%" />
+            <PercentTile name="+10%" />
             <CheckBox
               checked={boostChoices.lane}
               setChecked={(newLanes) =>
@@ -387,7 +387,7 @@ const Result: React.FC<ResultProps> = ({
             </div>
 
             <div className="percent-checkbox">
-              <PercentTile name="+3%" />
+              <PercentTile name="+10%" />
               <CheckBox
                 checked={boostChoices.champions}
                 setChecked={(newChampions) =>
@@ -420,7 +420,7 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+7%" />
+            <PercentTile name="+20%" />
             <CheckBox
               checked={boostChoices.streamed}
               setChecked={(newStreamed) => {
@@ -436,7 +436,7 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+3%" />
+            <PercentTile name="+10%" />
             <CheckBox
               checked={boostChoices.chat}
               setChecked={(newChat) => {
@@ -452,7 +452,7 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+5%" />
+            <PercentTile name="+7€" />
             <CheckBox
               checked={boostChoices.additionalWin}
               setChecked={(newAdditionalWin) => {
@@ -474,7 +474,7 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+10%" />
+            <PercentTile name="+25%" />
             <CheckBox
               checked={boostChoices.priority}
               setChecked={(newPriority) => {

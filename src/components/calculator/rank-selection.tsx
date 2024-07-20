@@ -37,8 +37,8 @@ const RankSelection: React.FC<RankSelectionProps> = ({
   };
 
   const onChangeLps = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (parseInt(e.target.value) > 500) {
-      setError("Max 500 LP");
+    if (parseInt(e.target.value) > 150) {
+      setError("Max 150 LP");
       return;
     } else {
       setError("");
@@ -125,7 +125,7 @@ const RankSelection: React.FC<RankSelectionProps> = ({
                     <span className="input-title">Current LP</span>
 
                     <input
-                      placeholder="LP's (max 500)"
+                      placeholder="LP's (max 150)"
                       onChange={onChangeLps}
                     />
                   </>
@@ -135,7 +135,7 @@ const RankSelection: React.FC<RankSelectionProps> = ({
                     <span className="input-title">Desired LP</span>
 
                     <input
-                      placeholder="LP's (max 500)"
+                      placeholder="LP's (max 150)"
                       onChange={onChangeLps}
                     />
                   </>
