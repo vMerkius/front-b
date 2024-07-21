@@ -24,6 +24,7 @@ import { useNavigate } from "react-router-dom";
 import { IResult } from "../../types/result-type";
 import axios from "axios";
 import { toast } from "react-toastify";
+import exclamation from "../../../public/assets/img/new-icons/exclamation.svg";
 const URL = "https://back-b-kzfc.onrender.com";
 
 type ResultProps = {
@@ -55,6 +56,7 @@ const Result: React.FC<ResultProps> = ({
     estimated: "",
   });
   const [showModalLanes, setShowModalLanes] = useState<boolean>(false);
+  const [showDiscordInfo, setShowDiscordInfo] = useState<boolean>(false);
   const [showModalChampion, setShowModalChampion] = useState<boolean>(false);
   const [showModalFlash, setShowModalFlash] = useState<boolean>(false);
   const [champions, setChampions] = useState<string[]>([]);
@@ -147,6 +149,7 @@ const Result: React.FC<ResultProps> = ({
       priority: boostChoices.priority ? boostOptions.priority : false,
       queue: boostOptions.queue,
       discount: boostOptions.discount,
+      discord: boostOptions.discord,
     };
 
     const response = await calculateAPI(dataToSend);
@@ -157,6 +160,10 @@ const Result: React.FC<ResultProps> = ({
   };
 
   const handleOrder = async () => {
+    if (!boostOptions.discord) {
+      toast.error("Please enter your discord name");
+      return;
+    }
     const orderData = {
       boostType: isNetWins
         ? "netWins"
@@ -185,6 +192,7 @@ const Result: React.FC<ResultProps> = ({
       priority: boostChoices.priority ? boostOptions.priority : false,
       queue: boostOptions.queue,
       discount: boostOptions.discount,
+      discord: boostOptions.discord,
     };
 
     try {
@@ -541,14 +549,49 @@ const Result: React.FC<ResultProps> = ({
       </div>
 
       <div className="pay">
-        {/* <form
-          action="http://localhost:3000/api/v1/orders/create-checkout-session"
-          method="POST"
-        >
-          <button type="submit" className="pay-btn">
-            Checkout
-          </button>
-        </form> */}
+        <div className="checkout-cont">
+          <div
+            className="input-disc"
+            style={{
+              display: "flex",
+              alignSelf: "center",
+              justifySelf: "flex-start",
+              width: "40%",
+            }}
+          >
+            <input
+              onChange={(e) =>
+                setBoostOptions({ ...boostOptions, discord: e.target.value })
+              }
+              type="text"
+              placeholder="discord name"
+            ></input>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              alignSelf: "center",
+              justifySelf: "center",
+            }}
+          >
+            <img
+              onMouseEnter={() => setShowDiscordInfo(true)}
+              onMouseLeave={() => setShowDiscordInfo(false)}
+              src={exclamation}
+              alt="exclamation"
+              width="30px"
+              style={{ cursor: "pointer" }}
+            />
+            {showDiscordInfo && (
+              <div className="discord-info">
+                <span>
+                  Please enter your discord name so we can contact you.
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
         <button
           onClick={async () => {
             if (await checkLoggedIn()) {

@@ -289,8 +289,35 @@
     margin-right: 10px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
+    & .checkout-cont {
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      position: relative;
+      & .discord-info {
+        position: absolute;
+        width: 220px;
+        top: -60px;
+        left: 5px;
+        background-color: var(--tg-body-color);
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 100;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        & span {
+          font-size: 12px;
+          color: var(--tg-common-color-black);
+          text-align: center;
+        }
+      }
+    }
     & .pay-btn {
       background-color: var(--tg-theme-primary);
       color: var(--tg-common-color-black);

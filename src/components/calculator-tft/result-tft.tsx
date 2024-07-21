@@ -18,6 +18,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { IBoostTftOptions } from "../../types/boost-option-tft";
 import { IOrderTft } from "../../types/order-tft-type";
+import exclamation from "../../../public/assets/img/new-icons/exclamation.svg";
+
 const URL = "https://back-b-kzfc.onrender.com";
 
 type ResultProps = {
@@ -60,6 +62,7 @@ const ResultTft: React.FC<ResultProps> = ({
     priority: false,
   });
   const [calculate, setCalculate] = useState<boolean>(false);
+  const [showDiscordInfo, setShowDiscordInfo] = useState(false);
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -112,6 +115,7 @@ const ResultTft: React.FC<ResultProps> = ({
       chat: boostChoices.chat ? boostOptions.chat : false,
       priority: boostChoices.priority ? boostOptions.priority : false,
       discount: boostOptions.discount,
+      discord: boostOptions.discord,
     };
 
     const response = await calculateTftAPI(dataToSend);
@@ -122,6 +126,10 @@ const ResultTft: React.FC<ResultProps> = ({
   };
 
   const handleOrder = async () => {
+    if (!boostOptions.discord) {
+      toast.error("Please enter your discord name");
+      return;
+    }
     const orderData = {
       rankCurrent: rankCurrent,
       rankDesired: rankDesired,
@@ -133,6 +141,7 @@ const ResultTft: React.FC<ResultProps> = ({
       chat: boostChoices.chat ? boostOptions.chat : false,
       priority: boostChoices.priority ? boostOptions.priority : false,
       discount: boostOptions.discount,
+      discord: boostOptions.discord,
     };
 
     try {
@@ -330,6 +339,49 @@ const ResultTft: React.FC<ResultProps> = ({
       </div>
 
       <div className="pay">
+        <div className="checkout-cont">
+          <div
+            className="input-disc"
+            style={{
+              display: "flex",
+              alignSelf: "center",
+              justifySelf: "flex-start",
+              width: "40%",
+            }}
+          >
+            <input
+              onChange={(e) =>
+                setBoostOptions({ ...boostOptions, discord: e.target.value })
+              }
+              type="text"
+              placeholder="discord name"
+            ></input>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              alignSelf: "center",
+              justifySelf: "center",
+            }}
+          >
+            <img
+              onMouseEnter={() => setShowDiscordInfo(true)}
+              onMouseLeave={() => setShowDiscordInfo(false)}
+              src={exclamation}
+              alt="exclamation"
+              width="30px"
+              style={{ cursor: "pointer" }}
+            />
+            {showDiscordInfo && (
+              <div className="discord-info">
+                <span>
+                  Please enter your discord name so we can contact you.
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
         <button
           onClick={async () => {
             if (await checkLoggedIn()) {

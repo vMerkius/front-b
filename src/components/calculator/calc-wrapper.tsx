@@ -27,6 +27,7 @@ const CalcWrapper = () => {
     priority: false,
     queue: "solo/duo",
     discount: "",
+    discord: "",
   });
 
   const [netWins, setNetWins] = useState<number>(1);

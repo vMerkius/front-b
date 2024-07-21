@@ -26,4 +26,5 @@ export interface IOrder {
   netWins: number | undefined;
   placements: number | undefined;
   discount: string;
+  discord: string;
 }

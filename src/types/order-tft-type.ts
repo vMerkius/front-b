@@ -15,4 +15,5 @@ export interface IOrderTft {
   additionalWin: boolean;
   mmrs: string;
   discount: string;
+  discord: string;
 }
