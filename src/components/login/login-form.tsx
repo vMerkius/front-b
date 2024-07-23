@@ -8,6 +8,7 @@ import { loginAPI, loginGoogleAPI } from "../../server/server";
 import google from "../../../public/assets/img/new-icons/google.svg";
 import axios from "axios";
 import ShowPassword from "./show-password";
+import { useTime } from "react-timer-hook";
 
 interface IFormInput {
   email: string;
@@ -44,7 +45,6 @@ const LoginForm: React.FC<LoginFormProps> = ({
   const loginWithGoogleAPI = useGoogleLogin({
     onSuccess: async (response) => {
       try {
-        console.log("response", response);
         const res = await axios.get(
           "https://www.googleapis.com/oauth2/v3/userinfo",
           {
@@ -92,10 +92,13 @@ const LoginForm: React.FC<LoginFormProps> = ({
     reset();
     if (response && response.status === "success") {
       notifySuccess("Logged successfully!");
-      navigate("/");
-      window.location.reload();
+      setTimeout(() => {
+        navigate("/");
+        window.location.reload();
+      }, 1500);
+    } else {
+      notifyError("Login failed!");
     }
-    notifyError("Login failed!");
 
     reset();
   };
