@@ -8,7 +8,6 @@ import { loginAPI, loginGoogleAPI } from "../../server/server";
 import google from "../../../public/assets/img/new-icons/google.svg";
 import axios from "axios";
 import ShowPassword from "./show-password";
-import { useTime } from "react-timer-hook";
 
 interface IFormInput {
   email: string;
