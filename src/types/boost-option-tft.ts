@@ -5,4 +5,5 @@ export interface IBoostTftOptions {
   chat: boolean;
   priority: boolean;
   discount: string;
+  discord: string;
 }

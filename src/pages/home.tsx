@@ -11,6 +11,7 @@ import GalleryArea from "../components/gallery/gallery-area";
 import RoadMapArea from "../components/road-map/road-map-area";
 import TeamArea from "../components/team/team-area";
 import Footer from "../layout/footer/footer";
+import Safety from "../components/safety/safety";
 
 export default function Home() {
   return (
@@ -22,8 +23,9 @@ export default function Home() {
       <main className="main--area">
         <HeroBannerTwo />
         <CardsContainer />
-        <RoadMapArea />
+        <Safety />
         <VideoArea />
+        <RoadMapArea />
 
         <TeamArea />
 

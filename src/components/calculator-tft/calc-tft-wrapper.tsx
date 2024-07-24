@@ -13,6 +13,7 @@ const CalcTftWrapper = () => {
     chat: false,
     priority: false,
     discount: "",
+    discord: "",
   });
 
   const [rankCurrent, setRankCurrent] = useState<IUserRank>({

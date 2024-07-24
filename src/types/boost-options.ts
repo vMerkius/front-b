@@ -13,4 +13,5 @@ export interface IBoostOptions {
   priority: boolean;
   queue: string;
   discount: string;
+  discord: string;
 }

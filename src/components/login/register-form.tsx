@@ -64,7 +64,9 @@ const LoginForm: React.FC<LoginFormProps> = ({ setShowLogin }) => {
       console.log(response);
 
       reset();
+
       if (response.status === "success") {
+        console.log("here");
         notifySuccess("Account has been created successfully");
         handleLogin();
       }

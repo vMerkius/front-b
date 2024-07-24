@@ -11,7 +11,7 @@ const Faq: React.FC<FaqProps> = ({ secondOption }) => {
   return (
     <section
       className="faq-section"
-      style={{ backgroundImage: "url(/assets/img/bg/tournament_bg.jpg" }}
+      style={{ backgroundImage: "url(/assets/img/bg/team_bg.jpg" }}
     >
       <h1>Frequently Asked Questions</h1>
       <div className="items">
