@@ -29,7 +29,7 @@ const faq_data_2: IFaq[] = [
     id: 5,
     question: "What is offline chat?",
     answer:
-      "Offline chat means the chat function is disabled while the booster is playing on your account. This ensures your privacy and minimizes interactions with other players.",
+      "Your booster plays in offline mode in the game client, so your friends won't know someone else is using the account.",
   },
   {
     id: 6,
