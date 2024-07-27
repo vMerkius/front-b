@@ -112,7 +112,7 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
                     <ul className="list-wrap">
                       <li className="header-btn">
                         <NavLink
-                          to="https://www.trustpilot.com/review/front-b.onrender.com"
+                          to="https://www.trustpilot.com/review/boosters-den.com"
                           className="tg-btn-3 tg-svg"
                           target="_blank"
                         >
