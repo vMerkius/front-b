@@ -6,6 +6,7 @@ export interface ICoachCreate {
   champions: string[];
   rating: number;
   recommended: boolean;
+  description: string;
   imageUrl: string | null;
   price: number;
 }
@@ -19,6 +20,7 @@ export interface ICoach {
   champions: string[];
   rating: number;
   recommended: boolean;
+  description: string;
   imageUrl: string | null;
   price: number;
 }
