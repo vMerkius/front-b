@@ -210,24 +210,24 @@ const ResultTft: React.FC<ResultProps> = ({
         <img src={settingsIcon} alt="settings icon" width="30px" />
       </span>
 
-      <div className="row-choice">
-        <div className="option-name">
-          <span className="option-caption">Offline chat</span>
-        </div>
-
-        <div className="percent-checkbox">
-          <PercentTile name="FREE" />
-          <CheckBox
-            checked={boostChoices.chat}
-            setChecked={(newChat) => {
-              setBoostChoices((prev) => ({ ...prev, chat: newChat }));
-              setBoostOptions((prev) => ({ ...prev, chat: newChat }));
-            }}
-          />
-        </div>
-      </div>
       <div className="result__extra">
         <div style={{ display: "flex", flexDirection: "column" }}></div>
+        <div className="row-choice">
+          <div className="option-name">
+            <span className="option-caption">Offline chat</span>
+          </div>
+
+          <div className="percent-checkbox">
+            <PercentTile name="FREE" />
+            <CheckBox
+              checked={boostChoices.chat}
+              setChecked={(newChat) => {
+                setBoostChoices((prev) => ({ ...prev, chat: newChat }));
+                setBoostOptions((prev) => ({ ...prev, chat: newChat }));
+              }}
+            />
+          </div>
+        </div>
         <div className="row-choice">
           <div className="option-name">
             <span className="option-caption">Streamed games</span>
