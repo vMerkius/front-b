@@ -315,8 +315,7 @@ const ResultTft: React.FC<ResultProps> = ({
         <span className="days">{result.estimated}</span>
       </div>
       <span className="saved">
-        You saved{" "}
-        <span style={{ textDecoration: "underline" }}>€{result.discount}</span>{" "}
+        You saved <span style={{ color: "#45f882" }}>€{result.discount}</span>{" "}
         on your order!
       </span>
 

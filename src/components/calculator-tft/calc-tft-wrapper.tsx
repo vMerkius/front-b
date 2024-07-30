@@ -4,6 +4,7 @@ import rank_data from "../../data/rank-data";
 import { IBoostTftOptions } from "../../types/boost-option-tft";
 import ResultTft from "./result-tft";
 import RankSelectionTft from "./rank-selection-tft";
+import Comunicate from "../calculator/comunicate";
 
 const CalcTftWrapper = () => {
   const [boostOptions, setBoostOptions] = useState<IBoostTftOptions>({
@@ -82,6 +83,7 @@ const CalcTftWrapper = () => {
             isPlacements={false}
             isNetWins={false}
           />
+          <Comunicate />
         </div>
       </div>
     </section>
