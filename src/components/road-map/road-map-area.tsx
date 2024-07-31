@@ -17,7 +17,7 @@ const road_map_lists: IRoadMap[] = [
   {
     id: 1,
     active: true,
-    title: "step 1 - account creation",
+    title: "step 1 - Create an account",
     lists: [
       { active: true, text: "Register using your email" },
       { active: false, text: "Verify your email" },
@@ -27,7 +27,7 @@ const road_map_lists: IRoadMap[] = [
   {
     id: 2,
     active: false,
-    title: "step 2 - service selection",
+    title: "step 2 - Select your service",
     lists: [
       { active: false, text: "Check an offer that suits you" },
       { active: false, text: "Choose service from the list" },
@@ -41,7 +41,10 @@ const road_map_lists: IRoadMap[] = [
     lists: [
       { active: false, text: "Calculate total cost" },
       { active: false, text: "Complete payment" },
-      { active: false, text: "Wait and enjoy!" },
+      { active: false, text: "Join our Discord" },
+      { active: false, text: "We will contact you soon after" },
+      { active: false, text: "Track your order progress on private channel" },
+      { active: false, text: "Don't forget to rate us on Trustpilot :)" },
     ],
   },
 ];
