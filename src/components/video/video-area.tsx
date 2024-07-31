@@ -13,22 +13,22 @@ const VideoArea = () => {
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8 col-md-11">
               <div className="video__content text-center">
-                <a
+                {/* <a
                   className="popup-video cursor-pointer"
                   onClick={() => setIsVideoOpen(true)}
                 >
                   <i className="flaticon-play"></i>
-                </a>
+                </a> */}
                 <h2 className="title">
                   JOIN THE <span>COMMUNITY</span>
                 </h2>
-                <p>Join our Discord community</p>
+                <p>Official Boosters Den Discord</p>
                 <a
-                  href="https://discord.com/"
+                  href="https://discord.gg/mtmhNhwF"
                   target="_blank"
                   className="video__btn tg-btn-1"
                 >
-                  <span>join discord</span>
+                  <span>join us!</span>
                 </a>
               </div>
             </div>
