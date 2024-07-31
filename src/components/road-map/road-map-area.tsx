@@ -43,8 +43,8 @@ const road_map_lists: IRoadMap[] = [
       { active: false, text: "Complete payment" },
       { active: false, text: "Join our Discord" },
       { active: false, text: "We will contact you soon after" },
-      { active: false, text: "Track your order progress on private channel" },
-      { active: false, text: "Don't forget to rate us on Trustpilot :)" },
+      { active: false, text: "Track your order on private channel" },
+      { active: false, text: "Don't forget to rate us on Trustpilot  ;)" },
     ],
   },
 ];
