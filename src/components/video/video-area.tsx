@@ -20,9 +20,9 @@ const VideoArea = () => {
                   <i className="flaticon-play"></i>
                 </a> */}
                 <h2 className="title">
-                  JOIN THE <span>COMMUNITY</span>
+                  JOIN OUR <span>COMMUNITY</span>
                 </h2>
-                <p>Official Boosters Den Discord</p>
+                <p>Official Boosters Den Discord Server</p>
                 <a
                   href="https://discord.gg/mtmhNhwF"
                   target="_blank"
