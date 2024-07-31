@@ -170,7 +170,7 @@ const Header = ({ style_2 = false }: { style_2?: boolean }) => {
                                 id="svg-2"
                               />
                             )}
-                            <i className="flaticon-edit"></i> ~sign in
+                            <i className="flaticon-edit"></i> sign in
                           </NavLink>
                         )}
                       </li>
