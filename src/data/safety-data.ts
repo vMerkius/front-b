@@ -19,7 +19,7 @@ const safety_data: ISafety[] = [
     id: 3,
     name: "First Class Warranty",
     description:
-      "We guarantee account protection and password security; join our Discord for details.",
+      "We guarantee account protection and password security, join our Discord for details.",
     option: "verified",
   },
 ];

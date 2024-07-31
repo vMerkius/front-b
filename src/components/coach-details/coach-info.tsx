@@ -36,10 +36,7 @@ const CoachInfo: React.FC<CoachInfoProps> = ({ coach }) => (
                   </div>
                 )}
                 <span className="sub">About coach</span>
-                <span className="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem eaque ratione fugit, iste nihil quisquam
-                </span>
+                <span className="description">{coach.description}</span>
                 <span className="sub">Champions</span>
                 <div className="champions">
                   {coach.champions.map((champion, index) => (

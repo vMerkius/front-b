@@ -9,6 +9,7 @@ import NetWins from "./net-wins";
 import Placements from "./placements";
 import SliderPlacements from "./slider";
 import FaqBox from "../faq/faq-box";
+import Comunicate from "./comunicate";
 
 const CalcWrapper = () => {
   const [boostType, setBoostType] = useState<number>(1);
@@ -152,6 +153,7 @@ const CalcWrapper = () => {
               placements={placements}
             />
           )}
+          <Comunicate />
         </div>
       </div>
     </section>

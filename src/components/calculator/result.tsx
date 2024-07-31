@@ -368,7 +368,7 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+10%" />
+            <PercentTile name="FREE" />
             <CheckBox
               checked={boostChoices.lane}
               setChecked={(newLanes) =>
@@ -377,6 +377,22 @@ const Result: React.FC<ResultProps> = ({
                   lane: newLanes,
                 }))
               }
+            />
+          </div>
+        </div>
+        <div className="row-choice">
+          <div className="option-name">
+            <span className="option-caption">Offline chat</span>
+          </div>
+
+          <div className="percent-checkbox">
+            <PercentTile name="FREE" />
+            <CheckBox
+              checked={boostChoices.chat}
+              setChecked={(newChat) => {
+                setBoostChoices((prev) => ({ ...prev, chat: newChat }));
+                setBoostOptions((prev) => ({ ...prev, chat: newChat }));
+              }}
             />
           </div>
         </div>
@@ -438,22 +454,7 @@ const Result: React.FC<ResultProps> = ({
             />
           </div>
         </div>
-        <div className="row-choice">
-          <div className="option-name">
-            <span className="option-caption">Offline chat</span>
-          </div>
 
-          <div className="percent-checkbox">
-            <PercentTile name="+10%" />
-            <CheckBox
-              checked={boostChoices.chat}
-              setChecked={(newChat) => {
-                setBoostChoices((prev) => ({ ...prev, chat: newChat }));
-                setBoostOptions((prev) => ({ ...prev, chat: newChat }));
-              }}
-            />
-          </div>
-        </div>
         <div className="row-choice">
           <div className="option-name">
             <span className="option-caption">Additional win</span>
@@ -524,8 +525,7 @@ const Result: React.FC<ResultProps> = ({
         <span className="days">{result.estimated}</span>
       </div>
       <span className="saved">
-        You saved{" "}
-        <span style={{ textDecoration: "underline" }}>€{result.discount}</span>{" "}
+        You saved <span style={{ color: "#45f882" }}>€{result.discount}</span>{" "}
         on your order!
       </span>
 

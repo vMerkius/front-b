@@ -325,7 +325,7 @@
       padding: 10px 20px;
       font-size: 20px;
       font-weight: 600;
-      border-radius: 30px;
+      border-radius: 25px;
       transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
       &:hover {
         background-color: var(--tg-theme-secondary);
@@ -336,9 +336,8 @@
   & .saved {
     color: #adb0bc;
     color: var(--tg-common-color-rating);
-    color: var(--tg-theme-primary);
+    color: var(--tg-common-color-white);
     font-size: 24px;
-    //text-decoration: underline;
     margin-bottom: 10px;
   }
 
