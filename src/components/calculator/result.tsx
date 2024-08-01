@@ -27,6 +27,17 @@ import { toast } from "react-toastify";
 import exclamation from "../../../public/assets/img/new-icons/exclamation.svg";
 const URL = "https://back-b-kzfc.onrender.com";
 
+const bonusWinPrices: Record<any, string> = {
+  Iron: "2",
+  Bronze: "3",
+  Silver: "4",
+  Gold: "5",
+  Platinum: "6",
+  Emerald: "8",
+  Diamond: "16",
+  Master: "24",
+};
+
 type ResultProps = {
   rankCurrent: IUserRank;
   rankDesired: IUserRank;
@@ -461,7 +472,8 @@ const Result: React.FC<ResultProps> = ({
           </div>
 
           <div className="percent-checkbox">
-            <PercentTile name="+7€" />
+            <PercentTile name={`+${bonusWinPrices[rankDesired.rank]}€`} />
+            {/* <PercentTile name="+7€" /> */}
             <CheckBox
               checked={boostChoices.additionalWin}
               setChecked={(newAdditionalWin) => {
