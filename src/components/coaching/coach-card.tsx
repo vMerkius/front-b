@@ -49,7 +49,7 @@ const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
         })}
       </div>
       <span className="price">
-        <span className="price__color">{coach.price}$</span>/hour
+        <span className="price__color">{coach.price}€</span>/hour
       </span>
 
       <div className="lanes">
