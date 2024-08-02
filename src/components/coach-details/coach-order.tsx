@@ -10,6 +10,7 @@ import { calculateCoachAPI, checkLoginStatus } from "../../server/server";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { IPrice } from "../../types/price-type";
+import knight from "../../../public/assets/img/others/breadcrumb_img01.png";
 const URL = "https://back-b-kzfc.onrender.com";
 
 type CoachOrderProps = {
@@ -188,6 +189,7 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
           </button>
         </div>
       </div>
+      <img src={knight} alt="logo" className="logok" height={"400px"} />
     </section>
   );
 };
