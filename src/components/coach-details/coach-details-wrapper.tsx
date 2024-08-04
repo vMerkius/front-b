@@ -44,9 +44,17 @@ const CoachDetailsWrapper = () => {
         <CoachOrder coach={coach} />
       </section>
     );
-  // else {
-  //   return <h2>There is no such coach</h2>;
-  // }
+  else {
+    return (
+      <section className="coaching-details">
+          <BreadcrumbArea
+          title="Loading..."
+          subtitle="COACH DETAILS"
+          bg="/assets/img/bg/breadcrumb_bg01.jpg"
+        />
+      </section>
+    );
+  }
 };
 
 export default CoachDetailsWrapper;
