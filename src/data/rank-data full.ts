@@ -1,4 +1,4 @@
-const rank_data: {
+const rank_data_full: {
   id: number;
   img: string;
   name: string;
@@ -43,6 +43,16 @@ const rank_data: {
     img: "/assets/img/ranks/master.png",
     name: "Master",
   },
+  {
+    id: 9,
+    img: "/assets/img/ranks/grandmaster.png",
+    name: "Grandmaster",
+  },
+  {
+    id: 10,
+    img: "/assets/img/ranks/challenger.png",
+    name: "Challenger",
+  },
 ];
 
-export default rank_data;
+export default rank_data_full;

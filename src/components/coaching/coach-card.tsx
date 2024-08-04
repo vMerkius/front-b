@@ -1,10 +1,10 @@
 import { ICoach } from "../../types/coach-type";
 import Top from "./top";
-import rank_data from "../../data/rank-data";
 import game_data from "../../data/game-data";
 import lanes_data from "../../data/lanes-data";
 import star from "../../../public/assets/img/new-icons/star.svg";
 import { useNavigate } from "react-router-dom";
+import rank_data_full from "../../data/rank-data full";
 
 type CoachCardProps = {
   coach: ICoach;
@@ -30,7 +30,7 @@ const CoachCard: React.FC<CoachCardProps> = ({ coach }) => {
       </div>
 
       <div className="rank">
-        {rank_data.map((rank) => {
+        {rank_data_full.map((rank) => {
           if (rank.name === coach.rank) {
             return (
               <img src={rank.img} alt={rank.name} key={rank.id} width="70px" />

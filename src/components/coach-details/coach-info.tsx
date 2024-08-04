@@ -1,9 +1,9 @@
 import { ICoach } from "../../types/coach-type";
-import rank_data from "../../data/rank-data";
 import lanes_data from "../../data/lanes-data";
 import game_data from "../../data/game-data";
 import star from "../../../public/assets/img/new-icons/star.svg";
 import lanes from "../../../public/assets/img/lanes/lanes.png";
+import rank_data_full from "../../data/rank-data full";
 
 type CoachInfoProps = {
   coach: ICoach;
@@ -56,7 +56,7 @@ const CoachInfo: React.FC<CoachInfoProps> = ({ coach }) => (
               <ul className="list-wrap">
                 <li>
                   <div className="coaching-details__info-item">
-                    {rank_data.map((rank) => {
+                    {rank_data_full.map((rank) => {
                       if (rank.name === coach.rank) {
                         return (
                           <img
