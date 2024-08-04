@@ -44,9 +44,9 @@ const CoachDetailsWrapper = () => {
         <CoachOrder coach={coach} />
       </section>
     );
-  else {
-    return <h2>There is no such coach</h2>;
-  }
+  // else {
+  //   return <h2>There is no such coach</h2>;
+  // }
 };
 
 export default CoachDetailsWrapper;

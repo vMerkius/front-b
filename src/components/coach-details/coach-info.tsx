@@ -94,6 +94,12 @@ const CoachInfo: React.FC<CoachInfoProps> = ({ coach }) => (
                     <div className="coaching-details__info-content">
                       <span className="sub">Game</span>
 
+                      <img src="" />
+                    </div>
+
+                    <div className="coaching-details__info-content">
+                      <span className="sub">OP.GG</span>
+
                       <h5 className="title">{coach.game}</h5>
                     </div>
                   </div>
