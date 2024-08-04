@@ -24,7 +24,7 @@ const VideoArea = () => {
                 </h2>
                 <p>Official Boosters Den Discord Server</p>
                 <a
-                  href="https://discord.gg/mtmhNhwF"
+                  href="https://discord.gg/Z3NHg66deV"
                   target="_blank"
                   className="video__btn tg-btn-1"
                 >
