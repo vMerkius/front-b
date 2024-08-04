@@ -5,6 +5,7 @@ import Footer from "../layout/footer/footer";
 import BreadcrumbAreaThree from "../components/breadcrumb/breadcrumb-area-3";
 
 import Faq from "../components/faq/faq";
+import faq_data from "../data/faq-data";
 
 export default function ContactPage() {
   return (
@@ -16,7 +17,7 @@ export default function ContactPage() {
       <main className="main--area">
         <BreadcrumbAreaThree title="FaQ" subtitle="FaQ" />
 
-        <Faq />
+        <Faq faq_data={faq_data} />
       </main>
 
       <Footer />

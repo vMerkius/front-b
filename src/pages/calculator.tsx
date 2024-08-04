@@ -6,6 +6,7 @@ import BreadcrumbAreaThree from "../components/breadcrumb/breadcrumb-area-3";
 import CalcWrapper from "../components/calculator/calc-wrapper";
 import Faq from "./../components/faq/faq";
 import Safety from "../components/safety/safety";
+import faq_data_2 from "../data/faq-data2";
 export default function CalculatorPage() {
   return (
     <Wrapper>
@@ -17,7 +18,7 @@ export default function CalculatorPage() {
         <BreadcrumbAreaThree title="Lol Calculator" subtitle="Lol Calculator" />
 
         <CalcWrapper />
-        <Faq secondOption={true} />
+        <Faq faq_data={faq_data_2} />
         <Safety />
       </main>
 
