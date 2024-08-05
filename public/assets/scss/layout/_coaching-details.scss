@@ -130,6 +130,27 @@
           font-size: 14px;
         }
       }
+      & .btn-section {
+        & .discord-info {
+          position: absolute;
+          width: 220px;
+          top: -60px;
+          left: 5px;
+          background-color: var(--tg-body-color);
+          padding: 5px;
+          border-radius: 5px;
+          z-index: 100;
+          display: flex;
+
+          justify-content: center;
+          align-items: center;
+          & span {
+            font-size: 12px;
+            color: var(--tg-common-color-black);
+            text-align: center;
+          }
+        }
+      }
       & .hours-section {
         margin-top: 15px;
 

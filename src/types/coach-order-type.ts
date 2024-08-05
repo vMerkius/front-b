@@ -3,4 +3,5 @@ export interface ICoachOrder {
   hours: number;
   server: string;
   priority: boolean;
+  discord: string;
 }

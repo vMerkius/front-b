@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import minus from "../../../public/assets/img/new-icons/minus.svg";
 import plus from "../../../public/assets/img/new-icons/plus.svg";
 import { ICoach } from "../../types/coach-type";
-import rank_data from "../../data/rank-data";
 import ErrorMsg from "../common/err-message";
 import regions_data from "../../data/regions-data";
 import { ICoachOrder } from "../../types/coach-order-type";
@@ -11,6 +10,10 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { IPrice } from "../../types/price-type";
 import knight from "../../../public/assets/img/others/breadcrumb_img01.png";
+import rank_data_full from "../../data/rank-data full";
+import exclamation from "../../../public/assets/img/new-icons/exclamation.svg";
+import { toast } from "react-toastify";
+
 const URL = "https://back-b-kzfc.onrender.com";
 
 type CoachOrderProps = {
@@ -29,9 +32,11 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
     hours: 1,
     server: "EU-West",
     priority: false,
+    discord: "",
   });
 
   const [error, setError] = React.useState<string>("");
+  const [showDiscordInfo, setShowDiscordInfo] = useState<boolean>(false);
 
   const checkLoggedIn = async () => {
     const res = await checkLoginStatus();
@@ -68,6 +73,10 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
   };
 
   const handleOrder = async () => {
+    if (!orderOptions.discord) {
+      toast.error("Please enter your discord name");
+      return;
+    }
     try {
       const res = await axios.post(
         `${URL}/api/v1/orders/create-checkout-session`,
@@ -108,7 +117,7 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
           <div className="details-section">
             <span className="name">{coach.name}</span>
 
-            {rank_data.map((rank) => {
+            {rank_data_full.map((rank) => {
               if (rank.name === coach.rank) {
                 return (
                   <div key={rank.id} className="rank">
@@ -149,6 +158,7 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
             </div>
           </div>
         </div>
+
         <div className="hours-section">
           <h6 className="d-flex justify-content-center align-content-center gap-2 font-size-12 m-0">
             hours
@@ -162,8 +172,10 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
               <img src={plus} alt="plus icon" />
             </button>
           </div>
+
           {error && <ErrorMsg msg={error} />}
         </div>
+
         <div className="line"></div>
         <div className="total">
           <span>Total</span>
@@ -175,8 +187,63 @@ const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
         </div>
         <div
           className="btn-section"
-          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: "20px",
+          }}
         >
+          <div
+            style={{
+              display: "flex",
+              alignSelf: "center",
+              justifySelf: "flex-start",
+              width: "100%",
+            }}
+          >
+            <div
+              className="input-disc"
+              style={{
+                display: "flex",
+                alignSelf: "center",
+                justifySelf: "flex-start",
+                width: "60%",
+              }}
+            >
+              <input
+                onChange={(e) =>
+                  setOrderOptions({ ...orderOptions, discord: e.target.value })
+                }
+                type="text"
+                placeholder="discord name"
+              ></input>
+            </div>
+            <div
+              style={{
+                position: "relative",
+                display: "flex",
+                alignSelf: "center",
+                justifySelf: "center",
+              }}
+            >
+              <img
+                onMouseEnter={() => setShowDiscordInfo(true)}
+                onMouseLeave={() => setShowDiscordInfo(false)}
+                src={exclamation}
+                alt="exclamation"
+                width="30px"
+                style={{ cursor: "pointer" }}
+              />
+              {showDiscordInfo && (
+                <div className="discord-info">
+                  <span>
+                    Please enter your discord name so we can contact you.
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
           <button
             onClick={async () => {
               if (await checkLoggedIn()) {
