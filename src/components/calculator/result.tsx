@@ -116,12 +116,11 @@ const Result: React.FC<ResultProps> = ({
 
   const checkLoggedIn = async () => {
     const res = await checkLoginStatus();
-    console.log(res);
-    if (res.status === "success") {
-      return true;
-    } else {
-      navigate("/login");
+    if (!res) {
+      toast.error("Please login to continue");
       return false;
+    } else {
+      return true;
     }
   };
 
