@@ -20,7 +20,6 @@ import {
   checkDiscountAPI,
   checkLoginStatus,
 } from "../../server/server";
-import { useNavigate } from "react-router-dom";
 import { IResult } from "../../types/result-type";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -59,7 +58,6 @@ const Result: React.FC<ResultProps> = ({
   isNetWins,
   netWins,
 }) => {
-  const navigate = useNavigate();
   const [result, setResult] = useState<IResult>({
     price: 0,
     totalPrice: 0,

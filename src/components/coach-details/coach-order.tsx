@@ -6,7 +6,6 @@ import ErrorMsg from "../common/err-message";
 import regions_data from "../../data/regions-data";
 import { ICoachOrder } from "../../types/coach-order-type";
 import { calculateCoachAPI, checkLoginStatus } from "../../server/server";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { IPrice } from "../../types/price-type";
 import knight from "../../../public/assets/img/others/breadcrumb_img01.png";
@@ -21,7 +20,6 @@ type CoachOrderProps = {
 };
 
 const CoachOrder: React.FC<CoachOrderProps> = ({ coach }) => {
-  const navigate = useNavigate();
   const [result, setResult] = useState<IPrice>({
     price: 0,
     totalPrice: 0,
