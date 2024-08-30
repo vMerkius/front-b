@@ -80,10 +80,11 @@ const RoadMapArea = () => {
                   <div className="roadMap__content">
                     <h2 className="title">a look into our service</h2>
                     <p>
-                      As a new player in the market, we are transforming the LoL
-                      boosting and coaching experience. With professional
-                      coaches, top-notch boosting services, and 24/7 support, we
-                      ensure your success and satisfaction.
+                    We are Boosters Den.
+                    
+                    As a new force in the market, we’re redefining the LoL boosting and coaching experience. In addition to LoL, we also offer premium boosting and coaching services in Teamfight Tactics. Our team consists of highly skilled and experienced LoL boosters, dedicated to helping you reach your goals.
+
+                    Our professional coaches offer tailored coaching sessions for both teams and individual players. With top-tier boosting services, expert coaching, and 24/7 support, we guarantee your success and satisfaction.
                     </p>
                     <NavLink to="/faq" className="tg-btn-1 -btn-yellow">
                       <span>FaQ</span>

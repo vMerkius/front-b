@@ -18,25 +18,25 @@ const service_items: {
     id: 1,
     icon: "flaticon-diamond",
     title: "New to the Market",
-    desc: "We are a startup entering the market, ready to revolutionize LoL boosting and coaching services with our fresh approach and dedication.",
+    desc: "We are boosters den - a startup entering the market, ready to revolutionize lol and tft rank boosting and coaching services with our fresh approach and dedication.",
   },
   {
     id: 2,
     icon: "flaticon-user-profile",
     title: "Expert Coaches",
-    desc: "Our professional coaches are seasoned players who provide personalized coaching sessions tailored to your needs.",
+    desc: "Our professional boosters den coaches are the best players who provide personalized coaching sessions which will make your ranking elo skyrocket. All sessions are tailored to your needs.",
   },
   {
     id: 3,
     icon: "flaticon-ethereum",
     title: "Top Boosting Service",
-    desc: "We offer the best LoL boosting services with unmatched efficiency and security. ",
+    desc: "We offer the best lol and tft rank boosting services with unmatched efficiency and security. ",
   },
   {
     id: 4,
     icon: "flaticon-settings-1",
     title: "Customer Support",
-    desc: "Our 24/7 customer support ensures you have a seamless and enjoyable experience with our services.",
+    desc: "Our 24/7 boosters den customer support ensures you have a seamless and enjoyable experience with our services.",
   },
 ];
 
@@ -57,10 +57,10 @@ const ServicesArea = () => {
           <div className="col-lg-6">
             <div className="section__title text-start mb-65">
               <span className="sub-title tg__animate-text">
-                powerful services
+                Boosters Den services
               </span>
               <h3 className="title">
-                BOOSTING AND COACHING DONE RIGHT ON TIME
+                UNMATCHED ELO/RANK BOOSTING AND COACHING
               </h3>
             </div>
             <div className="services__wrapper">

@@ -1,29 +1,32 @@
+import { NavLink } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer-style-one">
-      {/* <div className="footer__top-wrap">
+      <div className="footer__top-wrap">
         <div className="container">
           <div className="row">
             <div className="col-xl-4 col-lg-5 col-md-7">
               <div className="footer-widget">
                 <div className="footer-logo logo">
-                  <NavLink to="/contact">
+                  <NavLink to="/">
                     <img src="/assets/img/logo/logo.png" alt="Logo" />
                   </NavLink>
                 </div>
                 <div className="footer-text">
-                  <p className="desc">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur</p>
-                  <p className="social-title">Active <span>With Us <i className="fas fa-angle-double-right"></i></span></p>
+                  <p className="desc">League of Legends and Teamfight Tactics are registered trademarks of Riot Games, Inc. We are not affiliated with or endorsed by Riot Games, Inc. in any way.</p>
+                  {/* <p className="social-title">Active <span>With Us <i className="fas fa-angle-double-right"></i></span></p>
                   <div className="footer-social">
                     <NavLink to="#"><img src="/assets/img/icons/social_icon01.png" alt="iocn"/></NavLink>
                     <NavLink to="#"><img src="/assets/img/icons/social_icon02.png" alt="iocn"/></NavLink>
                     <NavLink to="#"><img src="/assets/img/icons/social_icon03.png" alt="iocn"/></NavLink>
                     <NavLink to="#"><img src="/assets/img/icons/social_icon04.png" alt="iocn"/></NavLink>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
+
+            {/* <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
               <div className="footer-widget widget_nav_menu">
                 <h4 className="fw-title">quick link</h4>
                 <ul className="list-wrap menu">
@@ -35,8 +38,9 @@ const Footer = () => {
                   <li><NavLink to="#">Collectibles</NavLink></li>
                 </ul>
               </div>
-            </div>
-            <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
+            </div> */}
+
+            {/* <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
               <div className="footer-widget widget_nav_menu">
                 <h4 className="fw-title">Supports</h4>
                 <ul className="list-wrap menu">
@@ -48,8 +52,9 @@ const Footer = () => {
                   <li><NavLink to="#">Our News</NavLink></li>
                 </ul>
               </div>
-            </div>
-            <div className="col-xl-4 col-lg-5 col-md-7">
+            </div> */}
+
+            {/* <div className="col-xl-4 col-lg-5 col-md-7">
               <div className="footer-widget">
                 <h4 className="fw-title">Newsletter</h4>
                 <div className="footer-newsletter">
@@ -60,10 +65,10 @@ const Footer = () => {
                   </form>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="copyright__wrap">
         <div className="container">
           <div className="row align-items-center">

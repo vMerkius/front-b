@@ -40,7 +40,11 @@ const AboutAreaThree = () => {
             <div className="about__three-paragraph">
               <TextAnimation
                 style_2={true}
-                title="Welcome to our boosting and coaching service, where your gaming success is our priority. Our expert team ensures top-notch performance and personalized coaching. Join us and elevate your game to the next level with our professional support."
+                title="Welcome to our premier boosting and coaching service, where your gaming success is our top priority. We are a team of close friends with over 10 years of playing league of legends together reaching the highest rankings. We specialize in LoL Elo boosting and TFT Elo boosting, offering comprehensive rank boosting solutions for both League of Legends and Teamfight Tactics.
+
+Our expert team delivers high-quality League of Legends Elo boosting and personalized coaching to elevate your gameplay. Whether you’re looking to climb the ranks or improve your skills, we provide tailored support to help you achieve your goals.
+
+Join us today to experience top-notch boosting and coaching, and take your game to the next level with our professional assistance."
               />
             </div>
           </div>
