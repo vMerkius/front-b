@@ -16,7 +16,7 @@ import Safety from "../components/safety/safety";
 export default function Home() {
   return (
     <Wrapper>
-      <SEOCom title="Home" />
+      <SEOCom title="Boosting and Coaching" />
 
       <Header style_2={true} />
 
