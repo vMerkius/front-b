@@ -12,17 +12,20 @@ const HeroBannerTwo = () => {
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-10">
             <div className="banner__content slider__content text-center">
-              <h2 className="title wow bounceInLeft" data-wow-delay=".2s">
+              <h1 className="title wow bounceInLeft" data-wow-delay=".2s">
                 Boosters Den
-              </h2>
-              <p className="wow bounceInLeft" data-wow-delay=".4s">
-                boosting and coaching services
-              </p>
+                <p className="wow bounceInLeft" data-wow-delay=".2s">
+                  boosting and coaching services
+                </p>
+              </h1>
               <div
                 className="banner__btn wow bounceInLeft"
                 data-wow-delay=".6s"
               >
-                <NavLink to="/calculator/lol" className="tg-btn-3 tg-svg mx-auto">
+                <NavLink
+                  to="/calculator/lol"
+                  className="tg-btn-3 tg-svg mx-auto"
+                >
                   <SvgIconCom icon={"/assets/img/icons/shape.svg"} id="svg-1" />
                   <span>Get Started</span>
                 </NavLink>

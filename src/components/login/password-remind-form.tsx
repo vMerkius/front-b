@@ -39,25 +39,27 @@ const PasswordRemindForm: React.FC<LoginFormProps> = ({
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     setShowEmailError(!validEmail.test(data.email));
     const dataToSend: IUserForgotPassword = {
-      email: data.email
+      email: data.email,
     };
 
     if (validEmail.test(data.email)) {
-      const response = await forgotPasswordAPI(dataToSend);  
+      const response = await forgotPasswordAPI(dataToSend);
       reset();
       if (response.status === "success") {
-        notifySuccess("We have sent you an email with instructions to reset your password.");
+        notifySuccess(
+          "We have sent you an email with instructions to reset your password."
+        );
       }
     }
   };
-  
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
       id="login-form"
       className={`form ${animationClass} form--password`}
     >
-      <h1 style={{ margin: "0px" }}>Password reset</h1>
+      <h2 style={{ margin: "0px", fontSize: "34px" }}>Password reset</h2>
 
       <div className="input-grp">
         <input

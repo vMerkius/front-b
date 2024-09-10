@@ -98,7 +98,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ setShowLogin }) => {
       id="password-form"
       className={`form ${animationClass}`}
     >
-      <h1 style={{ margin: "0px" }}>Sign up</h1>
+      <h2 style={{ margin: "0px", fontSize: "34px" }}>Sign up</h2>
 
       <div className="input-grp">
         <input

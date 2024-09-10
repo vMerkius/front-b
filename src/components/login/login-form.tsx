@@ -28,6 +28,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
   const [animationClass, setAnimationClass] = useState("form-enter");
   const [googleLogin, setGoogleLogin] = useState(false);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleGoogleLogin = async (userInfo: any) => {
     try {
       console.log(userInfo);
@@ -107,7 +108,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
       id="login-form"
       className={`form ${animationClass}`}
     >
-      <h1 style={{ margin: "0px" }}>Login with</h1>
+      <h2 style={{ margin: "0px", fontSize: "34px" }}>Login with</h2>
 
       <button
         className="google-btn"
@@ -125,7 +126,7 @@ const LoginForm: React.FC<LoginFormProps> = ({
         <div className="or">or</div>
         <div className="line"></div>
       </div>
-      <h1 style={{ margin: "0px" }}>Sign in</h1>
+      <h2 style={{ margin: "0px", fontSize: "34px" }}>Sign in</h2>
       <div className="input-grp">
         <input
           {...register("email", { required: `Email is required!` })}
