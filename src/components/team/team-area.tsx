@@ -39,11 +39,13 @@ const TeamArea = () => {
               <div className="team__item">
                 <div className="team__thumb">
                   <NavLink to={`/coaching/${t._id}`}>
-                    {/* gdy bedzie w bazie img to do zmiany */}
-                    {/* <img src={t.img} alt="img" /> */}
-
                     {t.imageUrl ? (
-                      <img src={t.imageUrl} alt="img" />
+                      <img
+                        src={t.imageUrl}
+                        alt="img"
+                        width="224px"
+                        height="224px"
+                      />
                     ) : (
                       <img src={logoTmp} alt="img" />
                     )}
