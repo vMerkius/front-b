@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://www.boosters-den.com/sitemap.xml
+
+Disallow: /*?*
