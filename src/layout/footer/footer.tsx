@@ -28,16 +28,24 @@ const Footer = () => {
 
             <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
               <div className="footer-widget widget_nav_menu">
-                <h4 className="fw-title">Quick Links</h4>
+                <h4 className="fw-title">Services</h4>
                 <ul className="list-wrap menu">
                   <li><NavLink to="/calculator/lol">LoL boosting</NavLink></li>
                   <li><NavLink to="/calculator/TFT">TFT boosting</NavLink></li>
                   <li><NavLink to="/coaching">Coaching</NavLink></li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-xl-2 col-lg-3 col-md-5 col-sm-6">
+              <div className="footer-widget widget_nav_menu">
+                <h4 className="fw-title">Quick Links</h4>
+                <ul className="list-wrap menu">
                   <li><NavLink to="/about">About us</NavLink></li>
                   <li><NavLink to="/faq">Faq</NavLink></li>
                   <li><NavLink to="/login">Login</NavLink></li>
                   <li><NavLink to="https://discord.gg/Z3NHg66deV" target="_blank">Discord</NavLink></li>
-                  <li><NavLink to="https://www.trustpilot.com/review/boosters-den.com" target="_blank">Trustpilot</NavLink></li>
+                  <li><NavLink to="https://www.trustpilot.com/review/boosters-den.com" target="_blank">Reviews</NavLink></li>
                 </ul>
               </div>
             </div>
@@ -78,7 +86,7 @@ const Footer = () => {
               <div className="copyright__text">
                 <p>
                   Copyright © {new Date().getFullYear()} - All Rights Reserved
-                  By <span>BoostersDEN</span>
+                  By <span>Boosters DEN</span>
                 </p>
               </div>
             </div>
