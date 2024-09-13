@@ -17,6 +17,9 @@ import PaymentPage from "../pages/payment";
 import AccVerifiedPage from "../pages/verified";
 import NewPasswordPage from "../pages/new-password";
 import CalculatorTftPage from "../pages/calculator-tft";
+import BlogPage from "../pages/blog";
+import BlogDetailsPage from "../pages/blog-details";
+import DynamicBlogDetailsPage from "../pages/blog-details/dynamic-details";
 
 export default function AppNavigation() {
   return (
@@ -49,6 +52,9 @@ export default function AppNavigation() {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/verified" element={<AccVerifiedPage />} />
         <Route path="/new-password/:resetToken" element={<NewPasswordPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog-details" element={<BlogDetailsPage />} />
+        <Route path="/blog-details/:id" element={<DynamicBlogDetailsPage />} />
       </Routes>
     </BrowserRouter>
   );

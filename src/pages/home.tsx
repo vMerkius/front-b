@@ -12,6 +12,7 @@ import RoadMapArea from "../components/road-map/road-map-area";
 import TeamArea from "../components/team/team-area";
 import Footer from "../layout/footer/footer";
 import Safety from "../components/safety/safety";
+import AboutTeam from "../components/about-team/about-team";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <RoadMapArea />
 
         <TeamArea />
+        <AboutTeam />
 
         <div
           className="area-background"

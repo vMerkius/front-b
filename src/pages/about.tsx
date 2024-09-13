@@ -6,6 +6,7 @@ import BreadcrumbArea from "../components/breadcrumb/breadcrumb-area";
 import AboutAreaThree from "../components/about-area/about-area-3";
 import ServicesArea from "../components/services/services-area";
 import TeamArea from "../components/team/team-area";
+import AboutTeam from "../components/about-team/about-team";
 
 export default function AboutPage() {
   return (
@@ -22,6 +23,7 @@ export default function AboutPage() {
         <ServicesArea />
 
         <TeamArea />
+        <AboutTeam />
       </main>
 
       <Footer />

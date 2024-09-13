@@ -37,6 +37,11 @@ const menu_data: IMenuDataType[] = [
   },
   {
     id: 5,
+    title: "BLOG",
+    link: "/blog",
+  },
+  {
+    id: 6,
     title: "FaQ",
     link: "/faq",
   },

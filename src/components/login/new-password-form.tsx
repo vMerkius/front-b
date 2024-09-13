@@ -93,7 +93,7 @@ const NewPasswordForm: React.FC<NewPasswordFormProps> = ({ resetToken }) => {
         id="password-form"
         className={`form form-enter`}
       >
-        <h1 style={{ margin: "0px" }}>New Password</h1>
+        <h2 style={{ margin: "0px" }}>New Password</h2>
   
         <div className="input-grp input-grp--password">
           <input
