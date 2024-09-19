@@ -11,12 +11,12 @@ import faq_data_tft from "../data/faq-data-tft";
 export default function CalculatorTftPage() {
   return (
     <Wrapper>
-      <SEOCom title="Calculator" />
+      <SEOCom title="Boosting" />
 
       <Header />
 
       <main className="main--area">
-        <BreadcrumbAreaThree title="Tft Calculator" subtitle="Tft Calculator" />
+        <BreadcrumbAreaThree title="Tft Boosting" subtitle="Tft Boosting" />
 
         <CalcTftWrapper />
         <Faq faq_data={faq_data_tft} />

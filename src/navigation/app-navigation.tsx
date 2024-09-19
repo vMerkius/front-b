@@ -31,9 +31,9 @@ export default function AppNavigation() {
         <Route path="/team-details" element={<TeamDetailsPage />} />
         {/* <Route path="/contact" element={<ContactPage />} /> */}
         <Route path="/contact" element={<WorkInProgressPage />} />
-        <Route path="/calculator/lol" element={<CalculatorPage />} />
-        <Route path="/calculator/valorant" element={<WorkInProgressPage />} />
-        <Route path="/calculator/tft" element={<CalculatorTftPage />} />
+        <Route path="/boosting/lol" element={<CalculatorPage />} />
+        <Route path="/boosting/valorant" element={<WorkInProgressPage />} />
+        <Route path="/boosting/tft" element={<CalculatorTftPage />} />
 
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard/:id" element={<WorkInProgressPage />} />

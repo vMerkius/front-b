@@ -20,9 +20,9 @@ const menu_data: IMenuDataType[] = [
     title: "BOOST",
     link: "#",
     sub_menu: [
-      { title: "LOL", link: "/calculator/lol" },
-      { title: "TFT", link: "/calculator/tft" },
-      { title: "Valorant", link: "/calculator/valorant" },
+      { title: "LOL", link: "/boosting/lol" },
+      { title: "TFT", link: "/boosting/tft" },
+      { title: "Valorant", link: "/boosting/valorant" },
     ],
   },
   {

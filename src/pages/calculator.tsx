@@ -10,12 +10,12 @@ import faq_data_2 from "../data/faq-data2";
 export default function CalculatorPage() {
   return (
     <Wrapper>
-      <SEOCom title="Calculator" />
+      <SEOCom title="Boosting" />
 
       <Header />
 
       <main className="main--area">
-        <BreadcrumbAreaThree title="Lol Calculator" subtitle="Lol Calculator" />
+        <BreadcrumbAreaThree title="Lol Boosting" subtitle="Lol Boosting" />
 
         <CalcWrapper />
         <Faq faq_data={faq_data_2} />

@@ -1,0 +1,127 @@
+@use "../utils" as *;
+
+.more {
+  padding: 140px 200px 0px 200px;
+  display: flex;
+  gap: 10px;
+  &__header-sm {
+    font-size: 16px;
+    align-self: center;
+    font-weight: 500;
+  }
+  &__header {
+    font-size: 28px;
+    align-self: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--tg-theme-primary);
+  }
+  &__left {
+    width: 20%;
+    justify-self: center;
+    margin-top: 40px;
+  }
+  &__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    --overlayer-gradient: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+
+    & .submit-btn {
+      align-self: center;
+      background: var(--tg-theme-primary);
+      color: var(--tg-common-color-black);
+      font-family: var(--tg-heading-font-family);
+      text-transform: uppercase;
+      font-weight: var(--tg-fw-bold);
+      letter-spacing: 1px;
+      border: none;
+      padding: 14px 50px;
+      transition: background 0.5s ease;
+
+      &:hover {
+        background: var(--tg-theme-secondary);
+      }
+    }
+  }
+  &__paragraph {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      width: 100%;
+      height: 60px;
+      backdrop-filter: blur(0.7px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      height: 60px;
+      backdrop-filter: blur(1.15px);
+      z-index: 0;
+      pointer-events: none;
+    }
+    &--blur-gone {
+      &::before,
+      &::after {
+        backdrop-filter: none;
+      }
+    }
+    &--rest {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__show {
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &--active {
+      height: auto;
+      overflow: auto;
+    }
+  }
+}
+
+.line {
+  width: 50%;
+  height: 1px;
+  background-color: var(--tg-theme-primary);
+  margin: 20px auto;
+  display: inline-block;
+}
