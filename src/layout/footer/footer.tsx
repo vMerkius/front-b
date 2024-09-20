@@ -14,7 +14,11 @@ const Footer = () => {
                   </NavLink>
                 </div>
                 <div className="footer-text">
-                  <p className="desc">League of Legends and Teamfight Tactics are registered trademarks of Riot Games, Inc. We are not affiliated with or endorsed by Riot Games, Inc. in any way.</p>
+                  <p className="desc">
+                    League of Legends and Teamfight Tactics are registered
+                    trademarks of Riot Games, Inc. We are not affiliated with or
+                    endorsed by Riot Games, Inc. in any way.
+                  </p>
                   {/* <p className="social-title">Active <span>With Us <i className="fas fa-angle-double-right"></i></span></p>
                   <div className="footer-social">
                     <NavLink to="#"><img src="/assets/img/icons/social_icon01.png" alt="iocn"/></NavLink>
@@ -30,9 +34,15 @@ const Footer = () => {
               <div className="footer-widget widget_nav_menu">
                 <h4 className="fw-title">Services</h4>
                 <ul className="list-wrap menu">
-                  <li><NavLink to="/calculator/lol">LoL boosting</NavLink></li>
-                  <li><NavLink to="/calculator/TFT">TFT boosting</NavLink></li>
-                  <li><NavLink to="/coaching">Coaching</NavLink></li>
+                  <li>
+                    <NavLink to="/boosting/lol">LoL boosting</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/boosting/tft">TFT boosting</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/coaching">Coaching</NavLink>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -41,11 +51,28 @@ const Footer = () => {
               <div className="footer-widget widget_nav_menu">
                 <h4 className="fw-title">Quick Links</h4>
                 <ul className="list-wrap menu">
-                  <li><NavLink to="/about">About us</NavLink></li>
-                  <li><NavLink to="/faq">Faq</NavLink></li>
-                  <li><NavLink to="/login">Login</NavLink></li>
-                  <li><NavLink to="https://discord.gg/Z3NHg66deV" target="_blank">Discord</NavLink></li>
-                  <li><NavLink to="https://www.trustpilot.com/review/boosters-den.com" target="_blank">Reviews</NavLink></li>
+                  <li>
+                    <NavLink to="/about">About us</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/faq">Faq</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/login">Login</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="https://discord.gg/Z3NHg66deV" target="_blank">
+                      Discord
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="https://www.trustpilot.com/review/boosters-den.com"
+                      target="_blank"
+                    >
+                      Reviews
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             </div>

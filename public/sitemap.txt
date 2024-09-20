@@ -2,9 +2,9 @@ https://www.boosters-den.com/
 https://www.boosters-den.com/about
 https://www.boosters-den.com/team-details
 https://www.boosters-den.com/contact
-https://www.boosters-den.com/calculator/lol
-https://www.boosters-den.com/calculator/valorant
-https://www.boosters-den.com/calculator/tft
+https://www.boosters-den.com/boosting/lol
+https://www.boosters-den.com/boosting/valorant
+https://www.boosters-den.com/boosting/tft
 https://www.boosters-den.com/login
 https://www.boosters-den.com/dashboard/:id
 https://www.boosters-den.com/coaching
