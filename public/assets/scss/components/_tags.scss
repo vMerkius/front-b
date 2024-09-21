@@ -1,0 +1,29 @@
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  &__header {
+    flex: 0 0 100%;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #fff;
+    transform: translateY(7px);
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 2px solid var(--tg-theme-primary);
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    &:hover {
+      font-weight: 500;
+      background-color: var(--tg-theme-primary);
+      color: var(--tg-common-color-black);
+    }
+  }
+}

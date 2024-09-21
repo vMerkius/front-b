@@ -130,3 +130,20 @@
   margin: 25px auto;
   display: inline-block;
 }
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: var(--tg-common-color-black-3);
+  text-align: center;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 7px;
+  gap: 12px;
+
+  &__item {
+    font-size: 18px;
+    font-style: italic;
+  }
+}

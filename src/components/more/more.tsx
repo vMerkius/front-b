@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Tags from "../tags/tags";
+import storytags_data from "../../data/story-tags.data";
+import Field from "./tag-field";
 
 const More = () => {
   const [isShowMore, setIsShowMore] = useState(false);
@@ -118,8 +121,9 @@ const More = () => {
               </p>
             </li>
           </ul>
-
+          <Field />
           <span className="line"></span>
+
           <h5 className="more__title">
             &diams; The Paths to Greatness: Choosing a Role in Boosting
           </h5>
@@ -236,6 +240,7 @@ const More = () => {
             team forever at the forefront of a world where success is shared,
             and champions are made.
           </p>
+          <Tags tags={storytags_data} />
         </div>
       </div>
     </section>
