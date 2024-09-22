@@ -113,7 +113,7 @@ const Footer = () => {
               <div className="copyright__text">
                 <p>
                   Copyright © {new Date().getFullYear()} - All Rights Reserved
-                  By <span>Boosters DEN</span>
+                  By <span>Boosters Den</span>
                 </p>
               </div>
             </div>

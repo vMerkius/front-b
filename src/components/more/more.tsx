@@ -15,11 +15,11 @@ const More = () => {
         />
       </div>
       <div className="more__right">
-        <h4 className="more__header-sm">discover BoostersDEN</h4>
+        <h4 className="more__header-sm">Discover Boosters Den lol boost</h4>
         <h3 className="more__header">
           More about boosting and coaching universum
         </h3>
-        <h5 className="more__title">&diams; The Legend of BoostersDen</h5>
+        <h5 className="more__title">&diams; The Legend of Boosters Den</h5>
         <p
           className={`more__paragraph ${
             isShowMore ? "more__paragraph--blur-gone" : ""
@@ -32,7 +32,7 @@ const More = () => {
           player. He was a master in the craft of boosting, a service revered by
           those who sought to climb the ranks in competitive games like League
           of Legends (lol) and Teamfight Tactics (tft). His home and fortress?
-          None other than BoostersDen, the ultimate destination for players
+          None other than Boosters Den, the ultimate destination for players
           looking to ascend through the ranks with the aid of the most skilled
           boosters in the land.
         </p>
@@ -48,7 +48,7 @@ const More = () => {
 
         <div className={`more__show ${isShowMore ? "more__show--active" : ""}`}>
           <p className="more__paragraph--rest" style={{ marginBottom: "0" }}>
-            BoostersDen was not just a simple service—it was a sanctuary, a
+            Boosters Den was not just a simple service—it was a sanctuary, a
             place where aspiring players came to seek guidance from the best
             boosters in the industry. From elo boosting to coaching, Sir Booster
             led his league of champions, providing players with the means to
@@ -58,23 +58,23 @@ const More = () => {
           <span className="line"></span>
 
           <h5 className="more__title">
-            &diams; The Boosters of BoostersDen: Champions in Training
+            &diams; The Boosters of "Boosters Den": Champions in Training
           </h5>
           <p className="more__paragraph--rest">
             Much like any legendary figure, Sir Booster did not walk this path
             alone. He was accompanied by four talented students, each gifted
             with unique skills and destined to become great boosters in their
             own right. Sir Booster saw immense potential in each of them and
-            took it upon himself to train them, ensuring that BoostersDen would
+            took it upon himself to train them, ensuring that Boosters Den would
             always have a new generation of boosters ready to meet the demands
             of players seeking to climb the ranked ladders.
           </p>
           <ul>
             <li>
               <p className="more__paragraph--rest">
-                Sera was the first to arrive at BoostersDen. She was young but
+                Sera was the first to arrive at Boosters Den. She was young but
                 sharp, with a tactical mind that allowed her to dominate the Mid
-                Lane in LoL. Sera specialized in elo boosting, and her keen
+                Lane in LoL. Sera specialized in lol elo boosting, and her keen
                 understanding of the game's mechanics helped her guide countless
                 players to victory. Her journey was not only about winning games
                 but about imparting her knowledge to others. Through coaching,
@@ -84,7 +84,7 @@ const More = () => {
             </li>
             <li>
               <p className="more__paragraph--rest">
-                Leon, the next student to join the ranks of BoostersDen, was a
+                Leon, the next student to join the ranks of Boosters Den, was a
                 calm and composed individual. His mastery of TFT was
                 unparalleled, making him the perfect candidate for TFT boosting.
                 Leon was meticulous in his approach, analyzing every move on the
@@ -109,7 +109,7 @@ const More = () => {
             </li>
             <li>
               <p className="more__paragraph--rest">
-                Thorn was the last to join the BoostersDen quartet, but his
+                Thorn was the last to join the Boosters Den quartet, but his
                 impact was immediate. His aggressive playstyle in the AD Carry
                 role made him an invaluable asset to the team. Thorn specialized
                 in win boosting, guaranteeing victory for those who sought to
@@ -129,7 +129,7 @@ const More = () => {
           </h5>
           <p className="more__paragraph--rest">
             Sir Booster gathered his four students in the great hall of
-            BoostersDen, much like a wise teacher preparing his students for
+            Boosters Den, much like a wise teacher preparing his students for
             their final exam. He stood before them, his presence commanding
             respect and attention, and said, "You all have chosen to walk the
             path of a booster, but this is only the beginning. In order to truly
@@ -181,7 +181,7 @@ const More = () => {
           </h5>
           <p className="more__paragraph--rest">
             As the students began their journey to becoming the best boosters in
-            the land, Sir Booster led them to the BoostersDen marketplace, a
+            the land, Sir Booster led them to the Boosters Den marketplace, a
             place where players from all over the world came to request boosting
             services. The marketplace was alive with activity, filled with
             players eager to improve their ranks in LoL and TFT.
@@ -194,7 +194,7 @@ const More = () => {
             craft and a shining example of what it meant to be a true booster.
           </p>
           <p className="more__paragraph--rest">
-            And so, the legend of Sir Booster and the knights of BoostersDen
+            And so, the legend of Sir Booster and the knights of Boosters Den
             lives on. The world of boosting and coaching continues to evolve,
             but one thing remains constant: BoostersDen is where champions are
             made, and where those who seek greatness come to find it.
@@ -205,11 +205,11 @@ const More = () => {
             &diams; The Final Chapter of Sir Booster's Legacy
           </h5>
           <p className="more__paragraph--rest">
-            And so, the journey of Sir Booster and his students at BoostersDen
+            And so, the journey of Sir Booster and his students at Boosters Den
             reached new heights. As they continued to offer unparalleled
             boosting services in games like League of Legends and TFT, their
             legend spread far and wide across the digital world. Players from
-            all corners came to BoostersDen, not just for a higher rank but to
+            all corners came to Boosters Den, not just for a higher rank but to
             learn from the best, guided by the wisdom and experience of Sir
             Booster and his dedicated students.
           </p>
@@ -217,13 +217,13 @@ const More = () => {
             Through their commitment to boosting, coaching, and uplifting
             players from every walk of life, Sir Booster’s vision of creating a
             realm where everyone could reach their full potential became a
-            reality. The halls of BoostersDen continued to resonate with the
+            reality. The halls of Boosters Den continued to resonate with the
             echoes of victory, the thrill of teamwork, and the bonds formed
             through the shared pursuit of greatness.
           </p>
           <p className="more__paragraph--rest">
             As the world of competitive gaming evolved, one thing remained
-            constant—BoostersDen stood as a beacon of excellence, where players
+            constant — Boosters Den stood as a beacon of excellence, where players
             could trust that their path to victory would always be guided by the
             most skilled and honorable boosters. Under the ever-watchful eye of
             Sir Booster, the legacy of boosting greatness lived on, inspiring
@@ -236,7 +236,7 @@ const More = () => {
             together, any player could achieve their dreams.
           </p>
           <p className="more__paragraph--rest">
-            And so, the tale of BoostersDen continues, with Sir Booster and his
+            And so, the tale of Boosters Den continues, with Sir Booster and his
             team forever at the forefront of a world where success is shared,
             and champions are made.
           </p>
