@@ -10,9 +10,9 @@ const BlogSidebar = () => {
             <img src="/assets/img/logo/logo.png" alt="img" />
           </div>
           <div className="sidebar__author-content">
-            <h4 className="name">Boosting and Coaching </h4>
-            <p>League of Legends</p>
-            <p>Teamfight Tactics</p>
+            <h4 className="name">Elo Boosting and Coaching</h4>
+            <p>League of Legends - LoL</p>
+            <p>Teamfight Tactics - TFT</p>
             <p>Valorant</p>
             {/* <div className="sidebar__author-social">
               <NavLink to="#">
@@ -41,7 +41,19 @@ const BlogSidebar = () => {
         <ul className="list-wrap">
           <li>
             <NavLink to="#">gaming</NavLink>
+            <span className="float-right">(7)</span>
+          </li>
+          <li>
+            <NavLink to="#">E-sport</NavLink>
             <span className="float-right">(3)</span>
+          </li>
+          <li>
+            <NavLink to="#">League of Legends</NavLink>
+            <span className="float-right">(6)</span>
+          </li>
+          <li>
+            <NavLink to="#">Teamfight Tactics</NavLink>
+            <span className="float-right">(2)</span>
           </li>
           {/* <li>
             <NavLink to="#">ELECTRONIC</NavLink>
@@ -99,13 +111,16 @@ const BlogSidebar = () => {
       </div> */}
 
       <div className="blog-widget">
-        <h4 className="fw-title">Tag Cloud</h4>
+        <h4 className="fw-title">Boosters Den Tags</h4>
         <div className="tagcloud">
-          <NavLink to="#">E-sports</NavLink>
+          <NavLink to="#">E-sport</NavLink>
           <NavLink to="#">Boosting</NavLink>
           <NavLink to="#">Coaching</NavLink>
-          <NavLink to="#">BoosterDEN</NavLink>
           <NavLink to="#">Gaming</NavLink>
+          <NavLink to="#">LoL</NavLink>
+          <NavLink to="#">TFT</NavLink>
+          <NavLink to="#">Tournament</NavLink>
+          <NavLink to="#">Championship</NavLink>
         </div>
       </div>
     </aside>

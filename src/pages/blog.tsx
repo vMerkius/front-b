@@ -9,31 +9,13 @@ import BlogArea from "../components/blog/blog-area";
 export default function BlogPage() {
   return (
     <Wrapper>
-
-      {/* seo title */}
-      <SEOCom title="Blog" />
-      {/* seo title */}
-
-      {/* header start */}
+      <SEOCom title="Expert coaching and elo boosting tips for lol and tft" />
       <Header />
-      {/* header end */}
-
-      {/* main area start */}
       <main className="main--area">
-        {/* breadcrumb area start */}
-        <BreadcrumbAreaThree title="BLOG STANDARD" subtitle="BLOG LIST" />
-        {/* breadcrumb area end */}
-
-        {/* blog area start */}
+        <BreadcrumbAreaThree title="Boosters Den Blog" subtitle="lol elo boosting and coaching news & articles" />
         <BlogArea />
-        {/* blog area end */}
-
       </main>
-      {/* main area end */}
-
-      {/* footer start */}
       <Footer />
-      {/* footer end */}
     </Wrapper>
   );
 }

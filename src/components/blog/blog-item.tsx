@@ -4,17 +4,9 @@ import { NavLink } from "react-router-dom";
 const BlogItem = ({ blog }: { blog: IBlog }) => {
   return (
     <div className="blog-post-item">
-      <div className="blog-post-thumb">
-        <NavLink to={`/blog-details/${blog.id}`}>
-          <img src={blog.img} alt="img" />
-        </NavLink>
-      </div>
       <div className="blog-post-content">
         <div className="blog-post-meta">
           <ul className="list-wrap">
-            <li>
-              By<NavLink to={`/blog-details/${blog.id}`}>{blog.author}</NavLink>
-            </li>
             <li>
               <i className="far fa-calendar-alt"></i> {blog.author}
             </li>
