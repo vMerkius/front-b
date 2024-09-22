@@ -14,7 +14,7 @@ const AboutTeam = () => {
           everything stays within our circle. For reliable, professional
           boosting or coaching{" "}
           <span className="about-team__text--trust">
-            trust Boosters DEN – trust a team of friends.
+            trust Boosters Den – trust a team of friends.
           </span>
         </p>
       </div>
